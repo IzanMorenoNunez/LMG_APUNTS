@@ -16,6 +16,9 @@
         .com {
             display: flex;
         }
+        .con {
+            display: flex; 
+        }
         .izq {
             width: 50%;
         }
@@ -31,35 +34,90 @@
     <br>
     <br>
     <br>
+    <center>
     <div class="com">
+        <div class="izq">
+            <table>
+                <tr>
+                    <td>
+                        <h2>Llistes No Ordenades (&lt;ul&gt;):</h2>
+                        <ol>
+                            <li>S'utilitzen per a llistes d'elements sense un ordre
+                                específic.</li>
+                            <li>Els elements es mostren amb vinyetes o altres
+                                símbols abans de cada ítem.</li>
+                            <li>Cada element de la llista es defineix amb l'etiqueta
+                                &lt;li&gt; (list item).</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><img src="Captura de pantalla 2024-10-22 123223.png"></center>
+                    </td>
+                </tr>
+            </table>
+        </div>  
+        <div class="der">
+            <table>
+                <tr>
+                    <td>
+                        <h2>Llistes Ordenades (&lt;ol&gt;):</h2>
+                        <ol>
+                            <li>S'utilitzen per a llistes en què l'ordre dels
+                                elements és rellevant.</li>
+                            <li>Els elements es numeren automàticament (1, 2,
+                                3, etc.).</li>
+                            <li>Cada element de la llista també es defineix amb
+                                &lt;li&gt;.</li> 
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><img src="Captura de pantalla 2024-10-22 123228.png"></center>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+    <div class="con">
         <div class="izq">
             <table border="1" style="background-color: darkseagreen;" cellpadding="10" cellspacing="5">
                 <thead>
                     <tr>
-                        <th>Atributs d'enllaços</th>
+                        <th>Atributs de llistes:</th>
                         <th>Descripció</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><b>href (hypertext reference):</b></td>
+                        <td><b>Atribut type (per a llistes ordenades &lt;ol&gt;):</b></td>
                         <td>
-                            <li>Defineix la <b>URL</b> de destinació de l'enllaç.</li>
-                            <li>Pot ser un enllaç absolut (una URL completa)<br>
-                                o relatiu (camí dins del mateix domini).</li>
+                            <li>Es pot utilitzar per definir el tipus de
+                                numeració de la llista:</li>
+                            <ul>
+                                <li><b>1</b>: Nombres (predeterminat).</li>
+                                <li><b>A</b>: Majúscules.</li>
+                                <li><b>a</b>: Minúscules.</li>
+                                <li><b>I</b>: Números romans en majúscules.</li>
+                                <li><b>i</b>: Números romans en minúscules.</li>
+                            </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td><b>target:</b></td>
+                        <td><b>Atribut start (per a llistes ordenades  &lt;ol&gt;):</b></td>
                         <td>
-                            <li>Defineix <b>on s'obrirà</b> l'enllaç: a la mateixa pestanya,<br>
-                                en una nova pestanya o en un nou marc.</li>
-                            <li>Els valors més habituals són:</li>
-                            <ul>
-                                <li><b>_blank</b>: Obre l'enllaç en una <b>nova pestanya.</b></li>
-                                <li><b>_self</b>: Obre l'enllaç a la <b>mateixa pestanya</b><br>
-                                    (valor predeterminat).</li>
-                            </ul>
+                            <li>Defineix el número o lletra per començar la
+                                numeració.</li>
                         </td>
                     </tr>
                 </tbody>
@@ -68,15 +126,16 @@
         <div class="der">
             <table>
                 <tr>
-                    <td><img src="Captura de pantalla 2024-10-17 173616.png"></td>
+                    <td><img src="Captura de pantalla 2024-10-22 125235.png"></td>
                 </tr>
                 <tr>
                     <td>
-                        <center><img src="Captura de pantalla 2024-10-17 173622.png"></center>
+                        <center><img src="Captura de pantalla 2024-10-22 125238.png"></center>
                     </td>
                 </tr>
             </table>
         </div>
     </div>
+    </center>
 </body>
 </html>
