@@ -1,0 +1,32 @@
+.header-css {
+    padding: 10px;
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3ca59;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 35px;
+    font-size: small;
+}
+
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url("fonts/OpenSans-Regular.woff2") format("woff2"),
+    }
+a , p, li{
+    font-family: "Open Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color:rgb(196, 196, 196);
+    cursor: pointer;
+    text-decoration-line: underline;
+}
