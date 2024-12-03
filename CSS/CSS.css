@@ -46,8 +46,8 @@ h1{
     grid-template-columns: 1fr;
     grid-gap: 10px; 
     height: auto;
-    width: 600px;
     margin: auto;
+    justify-content: center;
 }
 .element {
     padding: 10px;

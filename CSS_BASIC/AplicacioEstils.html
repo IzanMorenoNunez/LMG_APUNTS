@@ -10,11 +10,11 @@
     <meta property="og:description" content="Apunts de LMG de 1r GSDAM">
     <meta property="og:image" content="logo.png">
     <meta property="og:url" content="file:///C:/Users/34637/OneDrive/Documentos/GitHub/LMG_APUNTS/index.html">
-    <link rel="icon" href="logocss.png" type="image/x-icon">
+    <link rel="icon" href="../img/logocss.png" type="image/x-icon">
     <title>Izan Moreno Nuñez</title>
     <link rel="stylesheet" href="../CSS/CSS.css">
 </head>
-<header>
+<header style="position: sticky; top: 0px;">
     <div class="header-css">
         <a href="../index_Css.html">
             MENÚ
@@ -35,8 +35,125 @@
     </div>
 </header>
 <body>
-    <center>
-        <h1></h1>
-    </center>
+    <section>
+        <div class="fondo grid">
+            <h1 class="element element-gran">APLICACIÓ D'ESTILS</h1>
+            <article>
+                <div style="text-align: start; font-size: larger;" class="element">El CSS es pot aplicar a un document HTML de tres maneres principals: en línia, incrustat (dins de l'HTML) i extern
+                    (mitjançant un fitxer CSS separat). Cadascuna d’aquestes formes té els seus propòsits i usos.</div>
+                <div style="text-align: start;"  class="element">
+                    <b>1. Estils en línia (Inline styles)</b>
+                </div>
+                <div class="element">
+                    Els estils en línia s'apliquen directament a un element HTML, utilitzant l'atribut style dins de la mateixa etiqueta de
+                    l'element. Aquest mètode és adequat per a aplicar estils a un sol element de manera ràpida, però no és recomanable
+                    per a pàgines grans, ja que dificulta la mantenibilitat.
+                </div>
+                <div>
+                    <img class="element" width="600px" src="../img/Captura de pantalla 2024-12-03 132223.png">
+                </div>
+                <div style="display: flex;flex-direction: row;font-size: small;">
+                    <div class="element">
+                        <b>Avantatges</b>
+                        <ol><li>Aplicació ràpida i
+                            directa a l'element.</li></ol>
+                    </div>
+                    <div class="element" style="padding-left: 250px;">
+                        <b>Desavantatges</b>
+                        <ol>
+                            <li>Dificulta la mantenibilitat en llocs
+                                webs grans perquè caldria aplicar
+                                l'estil a cada element manualment.
+                            </li>
+                            <li>
+                                No aprofita la capacitat de reutilitzar
+                                els estils.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section>
+        <div class="fondo grid">
+            <article>
+                <div class="element" style="text-align: start;"  class="element">
+                    <b>2. Estils incrustats (Embedded styles)</b>
+                </div>
+                <div class="element">
+                    Els estils incrustats es col·loquen dins de la secció &lt;head&gt; d’un document HTML, dins d’una etiqueta &lt;style&gt;. Aquests
+                    estils s'apliquen a tots els elements HTML de la pàgina actual.
+                </div>
+                <div style="display: flex;flex-direction: row;">
+                    <div class="element">
+                        <img width="400px" src="../img/Captura de pantalla 2024-12-03 133335.png">
+                    </div>
+                    <div class="element" style="padding-left: 50px;font-size: small;">
+                        <b>Avantatges</b>
+                        <ol><li>Més eficient que els estils en línia, ja que
+                            es poden aplicar estils a diversos
+                            elements d'una mateixa pàgina des d'un
+                            sol lloc.</li></ol>
+                        <b>Desavantatges</b>
+                        <ol>
+                            <li>Només afecta la pàgina on s’aplica, no es
+                                reutilitza entre diverses pàgines.
+                            </li>
+                            <li>
+                                Si la pàgina creix massa, pot fer més difícil
+                                la lectura i manteniment.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section>
+        <div class="fondo">
+            <article class="grid">
+                <div style="text-align: start;"  class="element">
+                    <b>3. Estils externs (External stylesheets)</b>
+                </div>
+                <div class="element">
+                    Els estils externs s’emmagatzemen en un fitxer CSS separat, i s’enllacen al document HTML utilitzant l'etiqueta &lt;link&gt;
+                    dins de la secció &lt;head&gt;. Aquest és el mètode més recomanat per a la majoria de llocs webs, especialment si consten
+                    de múltiples pàgines.   
+                </div>
+                <div class="element" style="display: flex;flex-direction: row;font-size: small;">
+                    <div>
+                        <img class="element" width="300px" src="../img/Captura de pantalla 2024-12-03 134142.png">
+                        <br>
+                        <b>Avantatges</b>
+                        <ol class="element">
+                            <li>Permet reutilitzar els estils en diverses pàgines
+                                web, facilitant la consistència i mantenibilitat.
+                            </li>
+                            <li>
+                                Facilita la separació entre el contingut (HTML) i
+                                l’estil (CSS).
+                            </li>
+                            <li>
+                                Optimitza el temps de càrrega del lloc web, ja
+                                que els navegadors poden emmagatzemar en
+                                memòria cau els fitxers CSS.
+                            </li>
+                        </ol>
+                    </div>
+                    <div style="padding-left: 50px">
+                        <img class="element" width="300px" src="../img/Captura de pantalla 2024-12-03 134147.png">
+                        <br>
+                        <b>Desavantatges</b>
+                        <ol class="element"><li>Si el fitxer CSS extern no es
+                            carrega correctament (per
+                            problemes de connexió o
+                            d’enllaç), la pàgina es mostrarà
+                            sense estils.</li></ol>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
 </body>
 </html>
