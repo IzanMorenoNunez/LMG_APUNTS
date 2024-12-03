@@ -10,11 +10,11 @@
     <meta property="og:description" content="Apunts de LMG de 1r GSDAM">
     <meta property="og:image" content="logo.png">
     <meta property="og:url" content="file:///C:/Users/34637/OneDrive/Documentos/GitHub/LMG_APUNTS/index.html">
-    <link rel="icon" href="logocss.png" type="image/x-icon">
+    <link rel="icon" href="../img/logocss.png" type="image/x-icon">
     <title>Izan Moreno Nuñez</title>
     <link rel="stylesheet" href="../CSS/CSS.css">
 </head>
-<header>
+<header style="position: sticky; top: 0px;">
     <div class="header-css">
         <a href="../index_Css.html">
             MENÚ
@@ -35,8 +35,151 @@
     </div>
 </header>
 <body>
-    <center>
-        <h1></h1>
-    </center>
+    <section>
+        <div class="fondo grid">
+            <h1 class="element element-gran">MÀRGES, FARCITS i VORES EN CSS</h1>
+            <div class="element-entradilla">
+                Els <b>marges</b> (margin), els <b>farcits</b> (padding) i les <b>vores</b> (border) són part del model de caixa en CSS, que descriu com
+                es disposen els elements en la pàgina. Aquestes propietats permeten ajustar l'espai exterior i interior d'un element,
+                així com definir-ne els límits visuals amb una vora.
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 20px;">
+                <div>
+                    <b>1. Marges (margin)</b>
+                    <br>
+                    <br>
+                    La propietat margin controla l'espai exterior d'un element, és
+                    a dir, l'espai que hi ha entre un element i els altres elements
+                    que l’envolten. Els marges es poden definir de manera
+                    individual per a cadascun dels quatre costats de l'element
+                    (superior, dret, inferior, esquerre) o de manera global per a
+                    tots els costats alhora.
+                </div>
+                <div>
+                    <img style="margin-left: 50px;margin-top: 50px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 201918.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 20px;">
+                <div>
+                    <b>2. Farcits (padding)</b>
+                    <br>
+                    <br>
+                    La propietat padding controla l'espai interior d'un element, és
+                    a dir, l'espai entre el contingut d'un element (com text o
+                    imatges) i les seves vores. Igual que amb els marges, els farcits
+                    es poden definir per a tots els costats o per a cadascun
+                    individualment.
+                </div>
+                <div>
+                    <img width="400px" style="margin-left: 50px; border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 201927.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 20px;">
+                <div>
+                    <b>3. Vores (border)</b>
+                    <br>
+                    <br>
+                    La propietat border s'utilitza per afegir una vora al voltant
+                    d'un element. Aquesta propietat té diversos subatributs:
+                    <ul>
+                        <li>
+                            <b>amplada de la vora</b> (border-width): defineix el gruix de
+                            la vora.
+                        </li>
+                        <li>
+                            <b>estil de la vora</b> (border-style): pot ser solid (sòlid),
+                            dashed (ratllat), dotted (puntets), etc.
+                        </li>
+                        <li>
+                            <b>color de la vora</b> (border-color): especifica el color de la
+                            vora.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img width="400px" style=" margin-top: 100px;margin-left: 50px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 201936.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;">
+                <div>
+                    <img style=" margin-top: 40px;border-radius: 5px;" src="../img/Captura de pantalla 2024-12-03 203910.png">
+                </div>
+                <div style="font-size: 10px;">
+                    <b>Unitats comunes:</b>
+                    <ol>
+                        <li>
+                            <b>Píxels (px):</b>
+                            <ul>
+                                <li>
+                                    Unitat fixa, representa un punt a la pantalla.
+                                </li>
+                                <li>
+                                    <b>Exemple:</b> padding: 2em; (2 vegades la mida de la font).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Ems (em):</b>
+                            <ul>
+                                <li>
+                                    Unitat relativa a la mida de la font de l'element pare.
+                                </li>
+                                <li>
+                                    <b>Exemple:</b> padding: 2em; (2 vegades la mida de la font).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Rems (rem):</b>
+                            <ul>
+                                <li>
+                                    Unitat relativa a la mida de la font de l'element arrel (html).
+                                </li>
+                                <li>
+                                    <b>Exemple:</b> margin: 1.5rem; (1.5 vegades la mida de la font arrel).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Percentatge (%):</b>
+                            <ul>
+                                <li>
+                                    Relativa a l'amplada o alçada del contenidor pare.
+                                </li>
+                                <li>
+                                    <b>Exemple:</b> padding: 5%; (5% de l'amplada del contenidor).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Viewports (vw, vh):</b>
+                            <ul>
+                                <li>
+                                    Relativa a la mida de la finestra visible.
+                                </li>
+                                <li>
+                                    <b>Exemple:</b> margin: 5vw; (5% de l'amplada del viewport).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Vores (border-width):</b>
+                            <ul>
+                                <li>
+                                    Gruixos predeterminats: thin, medium, thick o valors com px.
+                                </li>
+                                <li>
+                                    <b>Exemple:</b> Exemple: border: thick solid black;
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
