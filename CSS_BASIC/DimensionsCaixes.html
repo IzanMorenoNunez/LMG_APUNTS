@@ -10,11 +10,11 @@
     <meta property="og:description" content="Apunts de LMG de 1r GSDAM">
     <meta property="og:image" content="logo.png">
     <meta property="og:url" content="file:///C:/Users/34637/OneDrive/Documentos/GitHub/LMG_APUNTS/index.html">
-    <link rel="icon" href="logocss.png" type="image/x-icon">
+    <link rel="icon" href="../img/logocss.png" type="image/x-icon">
     <title>Izan Moreno Nuñez</title>
     <link rel="stylesheet" href="../CSS/CSS.css">
 </head>
-<header>
+<header style="position: sticky; top: 0px;">
     <div class="header-css">
         <a href="../index_Css.html">
             MENÚ
@@ -35,8 +35,129 @@
     </div>
 </header>
 <body>
-    <center>
-        <h1></h1>
-    </center>
+    <section>
+        <div class="fondo grid">
+            <h1 class="element element-gran">DIMENSIONS I CAIXES EN CSS</h1>
+            <div class="element-entradilla">
+                El CSS utilitza el model de caixa per representar els elements d'una pàgina web. Cada element es considera com una
+                caixa rectangular que conté el contingut, farcits, marges i vores. És important entendre aquest model perquè
+                controla com es distribueixen i s'ajusten els elements dins de la pàgina.
+            </div>
+            <div class="element-entradilla">
+                El model de caixa es compon de quatre parts principals:
+                <ol>
+                    <li>
+                        <b>Contingut:</b> El contingut real de l'element, com text, imatges o altres elements.
+                    </li>
+                    <li>
+                        <b>Farcit (padding):</b> L'espai entre el contingut i la vora.
+                    </li>
+                    <li>
+                        <b>Vora (border):</b> El límit al voltant del farcit.
+                    </li>
+                    <li>
+                        <b>Marge (margin):</b> L'espai extern entre la vora i altres elements.
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="fondo grid">
+            <div class="element" style="text-align: start;padding: 75px;">
+                <div>
+                    <b>1. Propietats de dimensions (width i height)</b>
+                    <br>
+                    <br>
+                    Les propietats width (amplada) i height (alçada) s’utilitzen per definir la mida d’un element. Aquests valors es
+                    poden definir en unitats fixes com píxels (px) o unitats relatives com percentatges (%), que depenen de la mida del
+                    seu element contenidor.
+                </div>
+                <div>
+                    <img style="margin-left: 50px;margin-top: 30px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 214432.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;padding: 75px;">
+                <div>
+                    <b>2. El model de caixa en CSS</b>
+                    <br>
+                    <br>
+                    El model de caixa estableix com es calculen les dimensions d'un element tenint en compte les propietats de marges, farcits, i vores. Per
+                    defecte, la mida de width i height només afecta el contingut. Per incloure el farcit i la vora dins de les dimensions de l'element, es pot utilitzar
+                    la propietat box-sizing.
+                    <br>
+                    <br>
+                    <b>Propietat box-sizing</b>
+                    <br>
+                    <br>
+                    La propietat box-sizing controla com es calculen les dimensions totals de l’element. Hi ha dues opcions principals:
+                    <ol>
+                        <li>
+                            <b>content-box</b> (valor per defecte): Només inclou el contingut en les dimensions, mentre que les vores i els farcits s'afegeixen a part.
+                        </li>
+                        <li>
+                            <b>border-box:</b> Inclou el contingut, el farcit i la vora dins de les dimensions especificades.
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <img style="margin-left: 130px;margin-top: 30px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 214438.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;padding: 75px;">
+                <div>
+                    <b>3. Control del desbordament (overflow)</b>
+                    <br>
+                    <br>
+                    Quan el contingut d'un element és més gran que les dimensions especificades, el CSS ofereix la propietat overflow per controlar com es
+                    mostra el contingut que desborda.
+                    <br>
+                    <br>
+                    <b>Els valors més comuns són:</b>
+                    <ul>
+                        <li>
+                            <b>visible:</b> El contingut que desborda es mostra fora de l’element (valor per defecte).
+                        </li>
+                        <li>
+                            <b>hidden:</b> El contingut que desborda es retalla i no es mostra.
+                        </li>
+                        <li>
+                            <b>scroll:</b> Mostra barres de desplaçament, encara que el contingut no desbordi.
+                        </li>
+                        <li>
+                            <b>auto:</b> Mostra barres de desplaçament només si el contingut desborda.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img style="margin-left: 150px;margin-top: 30px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 214450.png">
+                </div>
+            </div>
+        </div>
+        <div class="fondo grid">
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;">
+                <div style="margin-top: 50px;">
+                    <b>Resum de les propietats vistes:</b>
+                    <ol style="margin-top: 40px;">
+                        <li>
+                            <b>width i height:</b> Defineixen les dimensions d'un
+                            element.
+                        </li>
+                        <li>
+                            <b>box-sizing:</b> Controla com es calculen les
+                            dimensions totals d'un element tenint en compte
+                            el farcit i la vora.
+                        </li>
+                        <li>
+                            <b>overflow:</b> Controla com es maneja el contingut
+                            que desborda les dimensions de l'element.
+                        </li>
+                </div>
+                <div>
+                    <img style="margin-left: 30px;border-radius: 5px;" src="../img/Captura de pantalla 2024-12-03 214456.png">
+                </div>
+            </div>
+    </section>
 </body>
 </html>
