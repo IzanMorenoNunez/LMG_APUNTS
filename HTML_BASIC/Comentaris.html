@@ -13,17 +13,6 @@
     <link rel="icon" href="../img/logohtml.png" type="image/x-icon">
     <title>Izan Moreno Nuñez</title>
     <link rel="stylesheet" href="../CSS/HTML.css">
-    <style>
-        .com {
-            display: flex;
-        }
-        .izq {
-            width: 50%;
-        }
-        .der {
-            width: 50%;
-        }
-    </style>
 </head>
 <header>
     <div class="header-html">
@@ -50,26 +39,25 @@
 <body>
     <center><h1>COMENTARIS EN HTML</h1></center>
     <center>
-        <table border="1" style="background-color: darkseagreen;">
-            <tr>
-                <td><li>Els <b>comentaris</b> en HTML són línies de text que s'afegeixen al codi <br>
-                    per deixar notes o explicacions, però que <b> no són visibles </b> per als usuaris <br>
-                    finals en lapàgina web.</li></td>
-            </tr>
-            <tr>
-                <td><li>S'utilitzen per ajudar els desenvolupadors a <b>documentar el codi</b><br>
-                    , descriure seccions específiques o deixar indicacions per a futurs desenvolupadors.</li></td>
-            </tr>
-            <tr>
-                <td><li>Els comentaris <b>no afecten el rendiment ni la visualització </b> de la pàgina <br>
-                     en el navegador.</li></td>
-            </tr>
-        </table>
-        <br>
-        <br>
-        <div class="com">
-            <div class="izq"><img src="../img/Captura de pantalla 2024-10-17 130401.png"></div><!--imatge explicativa de com redactar es codi-->
-            <div class="der"><img src="../img/Captura de pantalla 2024-10-17 130423.png"></div><!--imatge sobre consells a tenir en compta-->
+        <div class="block-vertical" style="margin-left: 30%;margin-right: 30%; grid-gap: 20px;padding-bottom: 60px;">
+            <li>Els <b>comentaris</b> en HTML són línies de text que s'afegeixen al codi <br>
+                per deixar notes o explicacions, però que <b> no són visibles </b> per als usuaris <br>
+                finals en lapàgina web.</li>
+            <li>S'utilitzen per ajudar els desenvolupadors a <b>documentar el codi</b><br>
+                , descriure seccions específiques o deixar indicacions per a futurs desenvolupadors.</li>
+            <li>Els comentaris <b>no afecten el rendiment ni la visualització </b> de la pàgina <br>
+                 en el navegador.</li>    
+        </div>
+        <div class="block" style="padding-top: 50px;">
+            <div style="margin-left: auto;">
+                <img src="../img/Captura de pantalla 2024-10-17 130401.png"><!--imatge explicativa de com redactar es codi-->
+            </div>
+            <button class="trigger" popovertarget="popoverContent">
+                IMPORTANT
+            </button>
+            <div id="popoverContent" popover>
+                <img src="../img/Captura de pantalla 2024-10-17 130423.png"><!--imatge sobre consells a tenir en compta--> 
+            </div>
         </div>
     </center> 
 </body>

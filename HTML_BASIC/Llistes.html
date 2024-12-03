@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head><!--metadades de la pàgina-->
     <meta charset="UTF-8">
     <meta name="description" content="Aquests son els apunts de Llenguatge de Marques de GSDAM">
@@ -9,7 +10,7 @@
     <meta property="og:title" content="Introducció a HTML">
     <meta property="og:description" content="Apunts de LMG de 1r GSDAM">
     <meta property="og:image" content="logo.png">
-    <meta property="og:url" content="file:///C:/Users/34637/OneDrive/Documentos/GitHub/LMG_APUNTS/index.html">      
+    <meta property="og:url" content="file:///C:/Users/34637/OneDrive/Documentos/GitHub/LMG_APUNTS/index.html">
     <link rel="icon" href="../img/logohtml.png" type="image/x-icon">
     <title>Izan Moreno Nuñez</title>
     <link rel="stylesheet" href="../CSS/HTML.css">
@@ -17,12 +18,15 @@
         .com {
             display: flex;
         }
+
         .con {
-            display: flex; 
+            display: flex;
         }
+
         .izq {
             width: 50%;
         }
+
         .der {
             width: 50%;
         }
@@ -50,15 +54,13 @@
         </a>
     </div>
 </header>
+
 <body>
-    <center><h1>LLISTES</h1></center> 
-    <br>
-    <br>
-    <br>
-    <br>
     <center>
-    <div class="com">
-        <div class="izq">
+        <h1>LLISTES</h1>
+    </center>
+    <div class="block">
+        <div style="padding-right: 100px;margin-bottom: 50px;">
             <table>
                 <tr>
                     <td>
@@ -75,12 +77,13 @@
                 </tr>
                 <tr>
                     <td>
-                        <center><img src="../img/Captura de pantalla 2024-10-22 123223.png"></center><!--imatge explicativa de com redactar es codi-->
+                        <center><img src="../img/Captura de pantalla 2024-10-22 123223.png"></center>
+                        <!--imatge explicativa de com redactar es codi-->
                     </td>
                 </tr>
             </table>
-        </div>  
-        <div class="der">
+        </div>
+        <div>
             <table>
                 <tr>
                     <td>
@@ -91,76 +94,59 @@
                             <li>Els elements es numeren automàticament (1, 2,
                                 3, etc.).</li>
                             <li>Cada element de la llista també es defineix amb
-                                &lt;li&gt;.</li> 
+                                &lt;li&gt;.</li>
                         </ol>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <center><img src="../img/Captura de pantalla 2024-10-22 123228.png"></center><!--imatge explicativa de com redactar es codi-->
+                        <center><img src="../img/Captura de pantalla 2024-10-22 123228.png"></center>
+                        <!--imatge explicativa de com redactar es codi-->
                     </td>
                 </tr>
             </table>
         </div>
     </div>
-    <br>
-    <hr><!--bot de pàgina-->
-    <br>
-    </center>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <center>
-    <div class="con">
-        <div class="izq">
-            <table border="1" style="background-color: darkseagreen;" cellpadding="10" cellspacing="5">
-                <thead>
-                    <tr>
-                        <th>Atributs de llistes:</th>
-                        <th>Descripció</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><b>Atribut type (per a llistes ordenades &lt;ol&gt;):</b></td>
-                        <td>
-                            <li>Es pot utilitzar per definir el tipus de
-                                numeració de la llista:</li>
-                            <ul>
-                                <li><b>1</b>: Nombres (predeterminat).</li>
-                                <li><b>A</b>: Majúscules.</li>
-                                <li><b>a</b>: Minúscules.</li>
-                                <li><b>I</b>: Números romans en majúscules.</li>
-                                <li><b>i</b>: Números romans en minúscules.</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><b>Atribut start (per a llistes ordenades  &lt;ol&gt;):</b></td>
-                        <td>
-                            <li>Defineix el número o lletra per començar la
-                                numeració.</li>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>  
-        <div class="der">
-            <table>
-                <tr>
-                    <td><img src="../img/Captura de pantalla 2024-10-22 125235.png"></td><!--imatge explicativa de com redactar es codi-->
-                </tr>
-                <tr>
-                    <td>
-                        <center><img src="../img/Captura de pantalla 2024-10-22 125238.png"></center><!--imatge sobre consells a tenir en compta-->
-                    </td>
-                </tr>
-            </table>
+    <div class="block">
+        <div class="block-vertical-2">
+            <div>
+                <b>Atributs de llistes:</b>
+            </div>
+            <div>
+                <b>Descripció</b>
+            </div>
+            <div>
+                <b>Atribut type (per a llistes ordenades &lt;ol&gt;):</b>
+            </div>
+            <div>
+                <li>Es pot utilitzar per definir el tipus de
+                    numeració de la llista:</li>
+                    <ul>
+                        <li><b>1</b>: Nombres (predeterminat).</li>
+                        <li><b>A</b>: Majúscules.</li>
+                        <li><b>a</b>: Minúscules.</li>
+                        <li><b>I</b>: Números romans en majúscules.</li>
+                        <li><b>i</b>: Números romans en minúscules.</li>
+                    </ul>
+            </div>
+            <div>
+                <b>Atribut start (per a llistes ordenades &lt;ol&gt;):</b>
+            </div>
+            <div>
+                <li>Defineix el número o lletra per començar la
+                    numeració.</li>
+            </div>
+        </div>
+        <div style="display: flex;flex-direction: column;">
+            <img src="../img/Captura de pantalla 2024-10-22 125235.png"><!--imatge explicativa de com redactar es codi-->
+            <button style="margin-top: 50px;" class="trigger" popovertarget="popoverContent">
+                IMPORTANT
+            </button>
+            <div id="popoverContent" popover>
+                <img src="../img/Captura de pantalla 2024-10-22 125238.png"><!--imatge sobre consells a tenir en compta--> 
+            </div>
         </div>
     </div>
-    </center>
 </body>
+
 </html>

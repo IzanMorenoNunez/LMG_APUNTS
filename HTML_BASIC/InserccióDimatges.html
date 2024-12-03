@@ -14,17 +14,6 @@
     <link rel="icon" href="../img/logohtml.png" type="image/x-icon">
     <title>Izan Moreno Nuñez</title>
     <link rel="stylesheet" href="../CSS/HTML.css">
-    <style>
-        .com {
-            display: flex;
-        }
-        .izq {
-            width: 50%;
-        }
-        .der {
-            width: 50%;
-        }
-    </style>
 </head>
 <header>
     <div class="header-html">
@@ -48,77 +37,65 @@
         </a>
     </div>
 </header>
+
 <body>
     <center>
         <h1>INSERCIÓ D'IMATGES</h1>
     </center>
     <br>
     <center>
-    <table border="1" style="background-color: darkseagreen;" cellpadding="10" cellspacing="5">
-        <tr>
-            <td><li>L'etiqueta <b>&lt;img&gt;</b> s'utilitza per inserir imatges en una pàgina web.</li></td>
-        </tr>
-        <tr>
-            <td><li><b>No té etiqueta de tancament</b>, ja que és un element auto-tancat.</li></td>
-        </tr>
-        <tr>
-            <td><li>És essencial proporcionar informació sobre la imatge perquè es <br>
-            mostri correctament i per millorar l'accessibilitat.</li></td>
-        </tr>
-    </table>
-    <br>
-    <br>
-      <div class="com">
-        <div class="izq">
-            <table border="1" style="background-color: darkseagreen;" cellpadding="10" cellspacing="5">
-                <thead>
-                    <tr>
-                        <th>Atributs d'imatges</th>
-                        <th>Descripció</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><b>src (source):</b></td>
-                        <td>
-                            <li>Defineix la <b>font</b> o el camí de la imatge.</li>
-                            <li>Pot ser un camí relatiu o una URL completa.</li>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><b>alt (alternate text):</b></td>
-                        <td>
-                            <li>Proporciona un <b>text alternatiu</b> que es mostra <br>
-                                si la imatge no es carrega o és llegida per <br>
-                                lectors de pantalla.</li>
-                            <li>És fonamental per a l'<b>accessibilitat</b> i SEO.</li>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><b>width i height:</b></td>
-                        <td>
-                            <li>Especifica l'<b>amplada</b> (width) i l'<b>alçada</b><br>
-                                (height) de la imatge en píxels o percentatges.</li>
-                            <li>És important per controlar la mida de la<br>
-                                imatge a la pàgina.</li>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>  
-        <div class="der">
-            <table>
-                <tr>
-                    <td><img src="../img/Captura de pantalla 2024-10-17 171124.png"></td><!--imatge explicativa de com redactar es codi-->
-                </tr>
-                <tr>
-                    <td>
-                        <center><img src="../img/Captura de pantalla 2024-10-17 171130.png"></center><!--imatge sobre consells a tenir en compta-->
-                    </td>
-                </tr>
-            </table>
+        <div class="block-vertical">
+            <li>L'etiqueta <b>&lt;img&gt;</b> s'utilitza per inserir imatges en una pàgina web.</li>
+            <li><b>No té etiqueta de tancament</b>, ja que és un element auto-tancat.</li>
+            <li>És essencial proporcionar informació sobre la imatge perquè es <br>
+                mostri correctament i per millorar l'accessibilitat.</li>
         </div>
-    </div>
+        <br>
+        <br>
+        <div class="block">
+            <div class="block-vertical-2">
+                <div>
+                    <p>Atributs d'imatges</p>
+                </div>
+                <div>
+                    <p>Descripció</p>
+                </div>
+                <div>
+                    <b>src (source):</b>
+                </div>
+                <div>
+                    <li>Defineix la <b>font</b> o el camí de la imatge.</li>
+                    <li>Pot ser un camí relatiu o una URL completa.</li>
+                </div>
+                <div>
+                    <b>alt (alternate text):</b>
+                </div>
+                <div>
+                    <li>Proporciona un <b>text alternatiu</b> que es mostra <br>
+                        si la imatge no es carrega o és llegida per <br>
+                        lectors de pantalla.</li>
+                    <li>És fonamental per a l'<b>accessibilitat</b> i SEO.</li>
+                </div>
+                <div>
+                    <b>width i height:</b>
+                </div>
+                <div>
+                    <li>Especifica l'<b>amplada</b> (width) i l'<b>alçada</b><br>
+                        (height) de la imatge en píxels o percentatges.</li>
+                    <li>És important per controlar la mida de la<br>
+                        imatge a la pàgina.</li>
+                </div>
+            </div>
+            <div style="display:flex;flex-direction: column;">
+                <img style="margin-top: 110px;" src="../img/Captura de pantalla 2024-10-17 171124.png"><!--imatge explicativa de com redactar es codi-->
+                <button class="trigger" popovertarget="popoverContent">
+                    IMPORTANT
+                </button>
+                <div id="popoverContent" popover>
+                    <img src="../img/Captura de pantalla 2024-10-17 171130.png"><!--imatge sobre consells a tenir en compta--> 
+                </div>
+            </div>
+        </div>
     </center>
 </body>
 

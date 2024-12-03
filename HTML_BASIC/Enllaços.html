@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head><!--metadades de la pàgina-->
     <meta charset="UTF-8">
     <meta name="description" content="Aquests son els apunts de Llenguatge de Marques de GSDAM">
@@ -17,9 +18,11 @@
         .com {
             display: flex;
         }
+
         .izq {
             width: 50%;
         }
+
         .der {
             width: 50%;
         }
@@ -47,72 +50,69 @@
         </a>
     </div>
 </header>
+
 <body>
-    <center><h1>ENLLAÇOS</h1></center>
-    <br>
     <center>
-    <table border="1" style="background-color: darkseagreen;" cellpadding="10" cellspacing="5">
-        <tr>
-            <td><li>L'etiqueta <b>&lt;a&gt;</b> s'utilitza per crear enllaços (links) a altres pàgines web, documents,<br> 
-                seccions dins de la mateixa pàgina o qualsevol altre recurs.</li></td>
-        </tr>
-        <tr>
-            <td><li>L'element essencial per als enllaços és l'atribut <b>href</b> que defineix l'URL a la qual <br>
-                redirigeix l'usuari.</li></td>
-        </tr>
-        <tr>
-            <td><li>El text entre l'etiqueta d'obertura i la de tancament és el que els usuaris veuran i podran clicar <br>
-                per ser redirigits.</li></td>
-        </tr>
-    </table>
+        <h1>ENLLAÇOS</h1>
+    </center>
     <br>
-    <br>
-      <div class="com">
-        <div class="izq">
-            <table border="1" style="background-color: darkseagreen;" cellpadding="10" cellspacing="5">
-                <thead>
-                    <tr>
-                        <th>Atributs d'enllaços</th>
-                        <th>Descripció</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><b>href (hypertext reference):</b></td>
-                        <td>
-                            <li>Defineix la <b>URL</b> de destinació de l'enllaç.</li>
-                            <li>Pot ser un enllaç absolut (una URL completa)<br>
-                                o relatiu (camí dins del mateix domini).</li>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><b>target:</b></td>
-                        <td>
-                            <li>Defineix <b>on s'obrirà</b> l'enllaç: a la mateixa pestanya,<br>
-                                en una nova pestanya o en un nou marc.</li>
-                            <li>Els valors més habituals són:</li>
-                            <ul>
-                                <li><b>_blank</b>: Obre l'enllaç en una <b>nova pestanya.</b></li>
-                                <li><b>_self</b>: Obre l'enllaç a la <b>mateixa pestanya</b><br>
-                                    (valor predeterminat).</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>  
-        <div class="der">
-            <table>
-                <tr>
-                    <td><img src="../img/Captura de pantalla 2024-10-17 173616.png"></td><!--imatge explicativa de com redactar es codi-->
-                </tr>
-                <tr>
-                    <td>
-                        <center><img src="../img/Captura de pantalla 2024-10-17 173622.png"></center><!--imatge sobre consells a tenir en compta-->
-                    </td>
-                </tr>
-            </table>
+    <div class="block-vertical" style="margin-bottom: 50px;">
+        <div>
+            <li>L'etiqueta <b>&lt;a&gt;</b> s'utilitza per crear enllaços (links) a altres pàgines web, documents,<br>
+                seccions dins de la mateixa pàgina o qualsevol altre recurs.</li>
+        </div>
+        <div>
+            <li>L'element essencial per als enllaços és l'atribut <b>href</b> que defineix l'URL a la qual <br>
+                redirigeix l'usuari.</li>
+        </div>
+        <div>
+            <li>El text entre l'etiqueta d'obertura i la de tancament és el que els usuaris veuran i podran clicar <br>
+                per ser redirigits.</li>
+        </div>
+    </div>
+    <div class="block">
+        <div class="block-vertical-2">
+            <div>
+                <b>Atributs d'enllaços</b>
+            </div>
+            <div>
+                <b>Descripció</b>
+            </div>
+            <div>
+                <b>href (hypertext reference):</b>
+            </div>
+            <div>
+                <li>Defineix la <b>URL</b> de destinació de l'enllaç.</li>
+                <li>Pot ser un enllaç absolut (una URL completa)<br>
+                    o relatiu (camí dins del mateix domini).</li>
+            </div>
+            <div>
+                <b>target:</b>
+            </div>
+            <div>
+                <li>Defineix <b>on s'obrirà</b> l'enllaç: a la mateixa pestanya,<br>
+                    en una nova pestanya o en un nou marc.</li>
+                <li>Els valors més habituals són:</li>
+                <ul>
+                    <li><b>_blank</b>: Obre l'enllaç en una <b>nova pestanya.</b></li>
+                    <li><b>_self</b>: Obre l'enllaç a la <b>mateixa pestanya</b><br>
+                        (valor predeterminat).</li>
+                </ul>
+            </div>
+        </div>
+        <div style="display: flex;flex-direction: column;">
+            <div>
+                <img
+                    src="../img/Captura de pantalla 2024-10-17 173616.png"><!--imatge explicativa de com redactar es codi-->
+            </div>
+            <button class="trigger" popovertarget="popoverContent">
+                IMPORTANT
+            </button>
+            <div id="popoverContent" popover>
+                <img src="../img/Captura de pantalla 2024-10-17 173622.png"><!--imatge sobre consells a tenir en compta--> 
+            </div>
         </div>
     </div>
 </body>
+
 </html>
