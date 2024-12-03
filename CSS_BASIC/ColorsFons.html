@@ -10,11 +10,11 @@
     <meta property="og:description" content="Apunts de LMG de 1r GSDAM">
     <meta property="og:image" content="logo.png">
     <meta property="og:url" content="file:///C:/Users/34637/OneDrive/Documentos/GitHub/LMG_APUNTS/index.html">
-    <link rel="icon" href="logocss.png" type="image/x-icon">
+    <link rel="icon" href="../img/logocss.png" type="image/x-icon">
     <title>Izan Moreno Nuñez</title>
     <link rel="stylesheet" href="../CSS/CSS.css">
 </head>
-<header>
+<header style="position: sticky; top: 0px;">
     <div class="header-css">
         <a href="../index_Css.html">
             MENÚ
@@ -35,8 +35,148 @@
     </div>
 </header>
 <body>
-    <center>
-        <h1></h1>
-    </center>
+    <section>
+        <div class="fondo grid">
+            <h1 class="element element-gran">COLOR I FONS EN CSS</h1>
+            <div class="element-entradilla">
+                El CSS proporciona diverses propietats per aplicar colors i fons als elements HTML. Aquestes propietats són essencials
+                per millorar l'aspecte visual i la llegibilitat de la pàgina web.
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 25px;">
+                <div>
+                    <b>1. Propietat color</b>
+                    <br>
+                    <br>
+                    La propietat color s’utilitza per canviar el color del text dins d’un
+                    element. Pots definir els colors de diverses maneres:
+                    <ol>
+                        <li>
+                            <b>Noms de colors:</b> utilitzar noms predefinits com red, blue,
+                            green, etc.
+                        </li>
+                        <li>
+                            <b>Colors hexadecimals:</b> utilitzar un codi hexadecimal que
+                            comença amb # seguit de sis caràcters (exemple: #FF0000
+                            per a vermell).
+                        </li>
+                        <li>
+                            <b>RGB:</b> utilitzar valors de rgb() on cada component (vermell,
+                            verd, blau) s’especifica entre 0 i 255.
+                        </li>
+                        <li>
+                            <b>RGBA:</b> igual que rgb(), però amb un quart valor per a l'opacitat
+                            (valors entre 0.0 i 1.0).
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <img style="margin-left: 50px;margin-top: 140px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 205643.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 25px;">
+                <div>
+                    <b>2. Propietat background-color</b>
+                    <br>
+                    <br>
+                    La propietat background-color s’utilitza per establir el color de fons
+                    d’un element. Igual que la propietat color, pots definir colors
+                    utilitzant noms, valors hexadecimals, RGB o RGBA.
+                </div>
+                <div>
+                    <img width="300px" style="margin-left: 50px;margin-top: 30px; border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 205649.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 25px;">
+                <div>
+                    <b>3. Propietat background</b>
+                    <br>
+                    <br>
+                    La propietat background és una manera abreujada d’especificar
+                    diverses propietats de fons alhora, com el color, la imatge de
+                    fons, la repetició, la posició, etc.
+                </div>
+                <div>
+                    <img style="margin-left: 50px;margin-top: 50px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 205655.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 25px;">
+                <div>
+                    <b>4. Propietat background-image</b>
+                    <br>
+                    <br>
+                    Aquesta propietat permet afegir una imatge com a fons d'un
+                    element. Pots especificar la ubicació de la imatge amb una URL.
+                </div>
+                <div>
+                    <img style="margin-left: 50px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 205702.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding-left: 50px;">
+                <div>
+                    Si vols que la imatge es repeteixi o es mostri d'una altra manera,
+                    pots utilitzar altres propietats complementàries:
+                    <ol>
+                        <li>
+                            <b>background-repeat:</b> Controla si la imatge de fons es repeteix.
+                            Els valors poden ser repeat, no-repeat, repeat-x
+                            (horitzontalment) o repeat-y (verticalment).
+                        </li>
+                        <li>
+                            <b>background-position:</b> Defineix la posició de la imatge de fons
+                            (per exemple, center, top, left).
+                        </li>
+                        <li>
+                            <b>background-size:</b> Permet ajustar la mida de la imatge (per
+                            exemple, cover o contain per adaptar-se a la mida de
+                            l'element).
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <img style="margin-left: 50px;margin-top: 50px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 205707.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;margin-top: 40px;">
+                <div>
+                    <b>Resum de les propietats vistes:</b>
+                    <ol style="margin-top: 20px;">
+                        <li>
+                            <b>color:</b> Defineix el color del text.
+                        </li>
+                        <li>
+                            <b>background-color:</b> Estableix el color de fons d'un
+                            element.
+                        </li>
+                        <li>
+                            <b>background-image:</b> Afegeix una imatge de fons a un
+                            element.
+                        </li>
+                        <li>
+                            <b>background-repeat:</b> Controla la repetició de la imatge de
+                            fons.
+                        </li>
+                        <li>
+                            <b>background-position:</b> Defineix la posició de la imatge de
+                            fons.
+                        </li>
+                        <li>
+                            <b>background-size:</b> Ajusta la mida de la imatge de fons.
+                        </li>
+                        <li>
+                            <b>background:</b> Ajusta la mida de la imatge de fons.
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <img style="margin-left: 30px;border-radius: 5px;" src="../img/Captura de pantalla 2024-12-03 211103.png">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
