@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Aquests son els apunts de Llenguatge de Marques de GSDAM">
@@ -34,18 +35,20 @@
         </a>
     </div>
 </header>
+
 <body>
     <section>
         <div class="fondo grid">
             <h1 class="element element-gran">SINTAXI BÀSICA DEL CSS</h1>
             <article style="display: flex;flex-direction: row;">
-                <div class="element"><img  style="border-radius: 25px;" src="../img/Captura de pantalla 2024-12-03 135222.png"></div>
+                <div class="element"><img style="border-radius: 25px;"
+                        src="../img/Captura de pantalla 2024-12-03 135222.png"></div>
                 <div class="element" style="text-align:start ;">
-                     <ol>
+                    <ol>
                         <li>
                             <b>Regla CSS:</b> és una instrucció que defineix com
                             s'ha d'aplicar un estil a un o més elements HTML
-d                           ins d'una pàgina web.
+                            d ins d'una pàgina web.
                         </li>
                         <li>
                             <b>Selector:</b> Indica l'element HTML al qual
@@ -66,7 +69,7 @@ d                           ins d'una pàgina web.
                             CSS que defineix una característica específica d'estil
                             per a un element HTML.
                         </li>
-                     </ol>
+                    </ol>
                 </div>
             </article>
         </div>
@@ -74,75 +77,86 @@ d                           ins d'una pàgina web.
     <section>
         <div class="fondo grid">
             <h2 style="text-align:start ;" class="element element-gran">SELECTORS EN CSS</h2>
-            <article>
-                <div class="element" style="display: flex;flex-direction: row;padding: 100px;">
-                    <div>
-                        <b>1. Selector de tipus (Type Selector)</b>
-                        Aquest selector aplica estils a tots els elements HTML del mateix
-                        tipus. Aquest codi aplicarà el color verd a tots els títols (&lt;h1&gt;) de la
-                        pàgina.
-                    </div>
-                    <div>
-                        <img style="margin-left: 50px;border-radius: 10px;" src="../img/Captura de pantalla 2024-12-03 140040.png">
-                    </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 100px;">
+                <div>
+                    <b>1. Selector de tipus (Type Selector)</b>
+                    <br>
+                    <br>
+                    Aquest selector aplica estils a tots els elements HTML del mateix
+                    tipus. Aquest codi aplicarà el color verd a tots els títols (&lt;h1&gt;) de la
+                    pàgina.
                 </div>
-            </article>
-            <article>
-                <div class="element" style="display: flex;flex-direction: row;padding: 100px;">
-                    <div>
-                        <b>2. Selector de classe (Class Selector)</b>
-                        Els selectors de classe permeten aplicar estils a elements HTML amb
-                        una classe específica. S’utilitza un punt (.) per seleccionar una
-                        classe. Qualsevol element HTML que tingui l'atribut class="mi-
-                        classe" tindrà un fons groc. Per exemple:
-                    </div>
-                    <div>
-                        <img width="200px" style="margin-left: 50px;margin-top: 50px; border-radius: 10px;" src="../img/Captura de pantalla 2024-12-03 192548.png">
-                    </div>
+                <div>
+                    <img style="margin-left: 50px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 140040.png">
                 </div>
-            </article>
-            <article>
-                <div class="element" style="display: flex;flex-direction: row;padding: 100px;">
-                    <div>
-                        <b>3. Selector d'id (ID Selector)</b>
-                        El selector d’id s’utilitza per aplicar estils a un únic element HTML
-                        que tingui un identificador específic. Es fa servir el símbol de la
-                        coixinera #. Aquest exemple centrarà el text de l’element que tingui
-                        id="mi-id". És important recordar que un ID ha de ser únic a la
-                        pàgina.
-                    </div>
-                    <div>
-                        <img style="margin-left: 50px;border-radius: 10px;" src="../img/Captura de pantalla 2024-12-03 192554.png">
-                    </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 100px;">
+                <div>
+                    <b>2. Selector de classe (Class Selector)</b>
+                    <br>
+                    <br>
+                    Els selectors de classe permeten aplicar estils a elements HTML amb
+                    una classe específica. S’utilitza un punt (.) per seleccionar una
+                    classe. Qualsevol element HTML que tingui l'atribut class="mi-
+                    classe" tindrà un fons groc. Per exemple:
                 </div>
-            </article>
-            <article>
-                <div class="element" style="display: flex;flex-direction: row;padding: 100px;">
-                    <div>
-                        <b>4. Selector universal</b>
-                        El selector universal (*) aplica estils a tots els elements d’una
-                        pàgina. Aquest exemple elimina els marges i farcits de tots els
-                        elements de la pàgina, cosa útil per establir un estil uniforme.
-                    </div>
-                    <div>
-                        <img style="margin-left: 50px;border-radius: 10px;" src="../img/Captura de pantalla 2024-12-03 192559.png">
-                    </div>
+                <div>
+                    <img width="200px" style="margin-left: 50px;margin-top: 50px; border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 192548.png">
                 </div>
-            </article>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 100px;">
+                <div>
+                    <b>3. Selector d'id (ID Selector)</b>
+                    <br>
+                    <br>
+                    El selector d’id s’utilitza per aplicar estils a un únic element HTML
+                    que tingui un identificador específic. Es fa servir el símbol de la
+                    coixinera #. Aquest exemple centrarà el text de l’element que tingui
+                    id="mi-id". És important recordar que un ID ha de ser únic a la
+                    pàgina.
+                </div>
+                <div>
+                    <img style="margin-left: 50px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 192554.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 100px;">
+                <div>
+                    <b>4. Selector universal</b>
+                    <br>
+                    <br>
+                    El selector universal (*) aplica estils a tots els elements d’una
+                    pàgina. Aquest exemple elimina els marges i farcits de tots els
+                    elements de la pàgina, cosa útil per establir un estil uniforme.
+                </div>
+                <div>
+                    <img style="margin-left: 50px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-03 192559.png">
+                </div>
+            </div>
         </div>
     </section>
     <section>
         <div class="fondo">
             <article style="display: grid;grid-template-columns: 1fr 1fr 1fr;">
                 <h1 class="element element-gran">CONCEPTES IMPORTANTS</h1>
-                <img width="220px" class="element" style="border-radius: 30px;" src="../img/Captura de pantalla 2024-12-03 193943.png">
-                <img width="220px" class="element" style="border-radius: 30px;" src="../img/Captura de pantalla 2024-12-03 193949.png">
-                <img width="220px" class="element" style="border-radius: 30px;" src="../img/Captura de pantalla 2024-12-03 193955.png">
-                <img width="220px" class="element" style="border-radius: 30px;" src="../img/Captura de pantalla 2024-12-03 193959.png">
-                <img width="220px" class="element" style="border-radius: 30px;" src="../img/Captura de pantalla 2024-12-03 194008.png">
-                <img width="220px" class="element" style="border-radius: 30px;" src="../img/Captura de pantalla 2024-12-03 194013.png">
+                <img width="220px" class="element" style="border-radius: 30px;"
+                    src="../img/Captura de pantalla 2024-12-03 193943.png">
+                <img width="220px" class="element" style="border-radius: 30px;"
+                    src="../img/Captura de pantalla 2024-12-03 193949.png">
+                <img width="220px" class="element" style="border-radius: 30px;"
+                    src="../img/Captura de pantalla 2024-12-03 193955.png">
+                <img width="220px" class="element" style="border-radius: 30px;"
+                    src="../img/Captura de pantalla 2024-12-03 193959.png">
+                <img width="220px" class="element" style="border-radius: 30px;"
+                    src="../img/Captura de pantalla 2024-12-03 194008.png">
+                <img width="220px" class="element" style="border-radius: 30px;"
+                    src="../img/Captura de pantalla 2024-12-03 194013.png">
             </article>
         </div>
     </section>
 </body>
+
 </html>
