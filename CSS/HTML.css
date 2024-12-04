@@ -44,7 +44,7 @@ a:hover {
     height: 120px;
     text-align: center;
     justify-content: center;
-    background-color: rgb(255, 191, 191)  ;
+    background-color: rgb(255, 254, 191);
     margin-left: 20%;
     margin-right: 20%;
     padding-top: 25px;
@@ -62,7 +62,7 @@ a:hover {
     padding-right: 20px;
     text-align: center;
     justify-content: center;
-    background-color: rgb(255, 191, 191)  ;
+    background-color: rgb(255, 254, 191);
     margin-right: 50px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -94,7 +94,7 @@ a:hover {
 .fondo{
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 191, 191);
+    background-color: rgb(255, 254, 191);
     border-radius: 30px;
     justify-content: center;
     margin: 50px auto;
