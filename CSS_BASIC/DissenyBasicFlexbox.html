@@ -10,11 +10,11 @@
     <meta property="og:description" content="Apunts de LMG de 1r GSDAM">
     <meta property="og:image" content="logo.png">
     <meta property="og:url" content="file:///C:/Users/34637/OneDrive/Documentos/GitHub/LMG_APUNTS/index.html">
-    <link rel="icon" href="logocss.png" type="image/x-icon">
+    <link rel="icon" href="../img/logocss.png" type="image/x-icon">
     <title>Izan Moreno Nuñez</title>
     <link rel="stylesheet" href="../CSS/CSS.css">
 </head>
-<header>
+<header style="position: sticky; top: 0px;">
     <div class="header-css">
         <a href="../index_Css.html">
             MENÚ
@@ -35,8 +35,183 @@
     </div>
 </header>
 <body>
-    <center>
-        <h1></h1>
-    </center>
+    <section>
+        <div class="fondo grid">
+            <h1 class="element element-gran">DISSENY BÀSIC AMB FLEXBOX</h1>
+            <div class="element-entradilla">
+                Flexbox és un sistema de disseny en CSS que proporciona una manera molt eficient de distribuir l'espai entre els
+                elements i alinear-los dins d'un contenidor, fins i tot quan la mida dels elements és desconeguda o dinàmica. Flexbox
+                és ideal per crear dissenys de pàgines adaptatives, ja que facilita l'alineació, distribució i ordenació dels elements
+                dins d'un contenidor.
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 70px">
+                <div>
+                    <b>1. El contenidor flex (display: flex)</b>
+                    <br>
+                    <br>
+                    El punt de partida per utilitzar Flexbox és establir display: flex en
+                    l'element contenidor. Aquest contenidor es coneix com a contenidor
+                    flex, i els seus elements fills es coneixen com a elements flex. Un cop
+                    activat el display: flex, pots utilitzar diverses propietats per ajustar com
+                    es distribueixen els elements dins del contenidor.
+                </div>
+                <div>
+                    <img style="margin-left: 35px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-04 195434.png">
+                    <img style="margin-left: 35px;margin-top: 20px; border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-04 195438.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 70px">
+                <div>
+                    <b>2. Direcció del flux (flex-direction)</b>
+                    <br>
+                    <br>
+                    Per defecte, els elements flex es disposen en fila horitzontalment. Pots
+                    canviar la direcció amb la propietat flex-direction.
+                    <br>
+                    <br>
+                    <b>Els valors més comuns són:</b>
+                    <ul>
+                        <li>
+                            <b>row:</b> Els elements es col·loquen en fila (horitzontal) (valor per
+                            defecte).
+                        </li>
+                        <li>
+                            <b>row-reverse:</b> Els elements es col·loquen en fila però en ordre
+                            invers.
+                        </li>
+                        <li>
+                            <b>column:</b> Els elements es col·loquen en columna (vertical).
+                        </li>
+                        <li>
+                            <b>column-reverse:</b> Els elements es col·loquen en columna però en
+                            ordre invers.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img width="200px" style="margin-left: 35px;margin-top: 100px; border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-04 195441.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 70px">
+                <div>
+                    <b>3. Alineació horitzontal (justify-content)</b>
+                    <br>
+                    <br>
+                    La propietat justify-content controla l'alineació dels elements al llarg de
+                    l'eix principal (horitzontal per defecte). Pots distribuir els elements flex de
+                    diferents maneres dins del contenidor.
+                    <br>
+                    <br>
+                    <b>Els valors més comuns són:</b>
+                    <ul>
+                        <li>
+                            <b>flex-start:</b> Els elements s'alineen al començament del contenidor.
+                        </li>
+                        <li>
+                            <b>flex-end:</b> Els elements es centren dins del contenidor.
+                        </li>
+                        <li>
+                            <b>center:</b> Els elements es col·loquen en columna (vertical).
+                        </li>
+                        <li>
+                            <b>space-between:</b> Es distribueixen uniformement amb espai entre ells.
+                        </li>
+                        <li>
+                            <b>space-around:</b> Els elements tenen espai al voltant de cadascun.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img style="margin-left: 50px;margin-top: 150px; border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-04 195532.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 70px">
+                <div>
+                    <b>4. Alineació vertical (align-items)</b>
+                    <br>
+                    <br>
+                    La propietat align-items controla l'alineació dels elements al llarg de l'eix
+                    transversal (vertical si la direcció és horitzontal). Aquesta propietat
+                    determina com s'alineen els elements flex dins del contenidor en relació
+                    amb la seva alçada.
+                    <br>
+                    <br>
+                    <b>Els valors més comuns són:</b>
+                    <ul>
+                        <li>
+                            <b>stretch:</b> Els elements s'estiren per omplir el contenidor (valor per
+                            defecte).
+                        </li>
+                        <li>
+                            <b>flex-start:</b> Els elements s'alineen a la part superior del contenidor.
+                        </li>
+                        <li>
+                            <b>flex-end:</b> Els elements s'alineen a la part inferior del contenidor.
+                        </li>
+                        <li>
+                            <b>center:</b> Els elements es centren verticalment dins del contenidor.
+                        </li>
+                        <li>
+                            <b>baseline:</b> Els elements s'alineen segons la seva línia de base de text.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img style="margin-left: 50px;margin-top: 150px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-04 195536.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: column;padding: 70px">
+                <div>
+                    <b>5. Control de l'espai que ocupa cada element (flex-grow)</b>
+                    <br>
+                    <br>
+                    La propietat flex-grow especifica com els elements flex creixen dins del contenidor per ocupar l'espai disponible. Cada element es pot assignar
+                    un valor numèric que indica quant ha de créixer en relació amb els altres elements. Si tots els elements tenen flex-grow: 1, l'espai disponible
+                    es distribuirà de manera uniforme.
+                </div>
+                <div>
+                    <img style="margin-left: 10px;margin-top: 40px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-04 195540.png">
+                </div>
+            </div>
+        </div>
+        <div class="fondo grid">
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;">
+                <div style="margin-top: 10px;">
+                    <b>Resum de les propietats vistes:</b>
+                    <ol style="margin-top: 40px;">
+                        <li>
+                            <b>display: flex:</b> Activa el Flexbox en el
+                            contenidor.
+                        </li>
+                        <li>
+                            <b>flex-direction:</b> Defineix si els elements es
+                            col·loquen en fila o en columna.
+                        </li>
+                        <li>
+                            <b>justify-content:</b> Alinea els elements
+                            horitzontalment (eix principal).
+                        </li>
+                        <li>
+                            <b>align-items:</b> Alinea els elements
+                            verticalment (eix transversal).
+                        </li>
+                        <li>
+                            <b>flex-grow:</b> Controla com creix cada element
+                            dins del contenidor per ocupar espai.
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <img width="300px" style="margin-left: 30px;border-radius: 5px;" src="../img/Captura de pantalla 2024-12-04 195547.png">
+                </div>
+            </div>
+        </div>
+    <section
 </body>
 </html>
