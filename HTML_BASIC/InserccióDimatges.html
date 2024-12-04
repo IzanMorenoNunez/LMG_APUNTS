@@ -15,7 +15,7 @@
     <title>Izan Moreno Nuñez</title>
     <link rel="stylesheet" href="../CSS/HTML.css">
 </head>
-<header>
+<header style="position: sticky; top: 0px;">
     <div class="header-html">
         <a href="../index_Html.html">
             MENÚ
@@ -39,64 +39,68 @@
 </header>
 
 <body>
-    <center>
-        <h1>INSERCIÓ D'IMATGES</h1>
-    </center>
-    <br>
-    <center>
-        <div class="block-vertical">
-            <li>L'etiqueta <b>&lt;img&gt;</b> s'utilitza per inserir imatges en una pàgina web.</li>
-            <li><b>No té etiqueta de tancament</b>, ja que és un element auto-tancat.</li>
-            <li>És essencial proporcionar informació sobre la imatge perquè es <br>
-                mostri correctament i per millorar l'accessibilitat.</li>
-        </div>
+    <div class="fondo">
+        <center>
+            <h1>INSERCIÓ D'IMATGES</h1>
+        </center>
         <br>
-        <br>
-        <div class="block">
-            <div class="block-vertical-2">
-                <div>
-                    <p>Atributs d'imatges</p>
-                </div>
-                <div>
-                    <p>Descripció</p>
-                </div>
-                <div>
-                    <b>src (source):</b>
-                </div>
-                <div>
-                    <li>Defineix la <b>font</b> o el camí de la imatge.</li>
-                    <li>Pot ser un camí relatiu o una URL completa.</li>
-                </div>
-                <div>
-                    <b>alt (alternate text):</b>
-                </div>
-                <div>
-                    <li>Proporciona un <b>text alternatiu</b> que es mostra <br>
-                        si la imatge no es carrega o és llegida per <br>
-                        lectors de pantalla.</li>
-                    <li>És fonamental per a l'<b>accessibilitat</b> i SEO.</li>
-                </div>
-                <div>
-                    <b>width i height:</b>
-                </div>
-                <div>
-                    <li>Especifica l'<b>amplada</b> (width) i l'<b>alçada</b><br>
-                        (height) de la imatge en píxels o percentatges.</li>
-                    <li>És important per controlar la mida de la<br>
-                        imatge a la pàgina.</li>
+        <center>
+            <div class="block-vertical">
+                <li>L'etiqueta <b>&lt;img&gt;</b> s'utilitza per inserir imatges en una pàgina web.</li>
+                <li><b>No té etiqueta de tancament</b>, ja que és un element auto-tancat.</li>
+                <li>És essencial proporcionar informació sobre la imatge perquè es <br>
+                    mostri correctament i per millorar l'accessibilitat.</li>
+            </div>
+            <br>
+            <br>
+            <div class="block">
+                <div class="block-vertical-2">
+                    <div>
+                        <p>Atributs d'imatges</p>
+                    </div>
+                    <div>
+                        <p>Descripció</p>
+                    </div>
+                    <div>
+                        <b>src (source):</b>
+                    </div>
+                    <div>
+                        <ul><li>Defineix la <b>font</b> o el camí de la imatge.</li></ul>
+                        <ul><li>Pot ser un camí relatiu o una URL completa.</li></ul>
+                    </div>
+                    <div>
+                        <b>alt (alternate text):</b>
+                    </div>
+                    <div>
+                        <ul><li>Proporciona un <b>text alternatiu</b> que es mostra <br>
+                            si la imatge no es carrega o és llegida per <br>
+                            lectors de pantalla.</li></ul>
+                        <ul><li>És fonamental per a l'<b>accessibilitat</b> i SEO.</li></ul>
+                    </div>
+                    <div>
+                        <b>width i height:</b>
+                    </div>
+                    <div>
+                        <ul><li>Especifica l'<b>amplada</b> (width) i l'<b>alçada</b><br>
+                            (height) de la imatge en píxels o percentatges.</li></ul>
+                        <ul><li>És important per controlar la mida de la<br>
+                            imatge a la pàgina.</li></ul>
+                    </div>
                 </div>
             </div>
             <div style="display:flex;flex-direction: column;">
-                <img style="margin-top: 110px;" src="../img/Captura de pantalla 2024-10-17 171124.png"><!--imatge explicativa de com redactar es codi-->
-                <button class="trigger" popovertarget="popoverContent">
+                <img style="margin-top: 30px;"
+                    src="../img/Captura de pantalla 2024-10-17 171124.png"><!--imatge explicativa de com redactar es codi-->
+                <button style="margin-top: 50px;" class="trigger" popovertarget="popoverContent">
                     IMPORTANT
                 </button>
                 <div id="popoverContent" popover>
-                    <img src="../img/Captura de pantalla 2024-10-17 171130.png"><!--imatge sobre consells a tenir en compta--> 
+                    <img
+                        src="../img/Captura de pantalla 2024-10-17 171130.png"><!--imatge sobre consells a tenir en compta-->
                 </div>
             </div>
-        </div>
-    </center>
+        </center>
+    </div>
 </body>
 
 </html>

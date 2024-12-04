@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head><!--metadades de la pàgina-->
     <meta charset="UTF-8">
     <meta name="description" content="Aquests son els apunts de Llenguatge de Marques de GSDAM">
@@ -9,23 +10,12 @@
     <meta property="og:title" content="Introducció a HTML">
     <meta property="og:description" content="Apunts de LMG de 1r GSDAM">
     <meta property="og:image" content="logo.png">
-    <meta property="og:url" content="file:///C:/Users/34637/OneDrive/Documentos/GitHub/LMG_APUNTS/index.html">      
+    <meta property="og:url" content="file:///C:/Users/34637/OneDrive/Documentos/GitHub/LMG_APUNTS/index.html">
     <link rel="icon" href="../img/logohtml.png" type="image/x-icon">
     <title>Izan Moreno Nuñez</title>
     <link rel="stylesheet" href="../CSS/HTML.css">
-    <style>
-        .com {
-            display: flex;
-        }
-        .izq {
-            width: 50%;
-        }
-        .der {
-            width: 50%;
-        }
-    </style>
 </head>
-<header>
+<header style="position: sticky; top: 0px;">
     <div class="header-html">
         <a href="../index_Html.html">
             MENÚ
@@ -40,70 +30,94 @@
         <a href="InserccióDimatges.html" title="">8</a>
         <a href="Enllaços.html" title="">9</a>
         <a href="Llistes.html" title="">10</a>
-        <a style="color: rgb(8, 123, 255);font-size: larger;"  href="Taules.html" title="">11</a>
+        <a style="color: rgb(8, 123, 255);font-size: larger;" href="Taules.html" title="">11</a>
         <a href="Taules2.html" title="">12</a>
         <a href="../index_Css.html">
             <img src="../img/css-png.png" width="40px">
         </a>
     </div>
 </header>
-<body>
-    <center><h1>Taules bàsiques amb HTML</h1></center>
-    <br>
-    <br>
-    <center>
-        <div class="com">
-            <div class="izq">
-                <table>
-                    <tr>
-                        <td><h2>Atributs de Taula</h2></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ol>
-                                <li><b>Etiqueta &lt;table&gt;:</b></li>
-                                <ul><li>L'etiqueta <b>&lt;table&gt;</b> defineix la taula i<br>
-                                    actua com el contenidor principal.</li></ul>
-                                <li><b>Etiqueta &lt;tr&gt; (table row):</b></li>
-                                <ul><li>Defineix una <b>fila</b> dins de la taula.</li></ul>
-                                <li><b>Etiqueta &lt;td&gt; (table data):</b></li>
-                                <ul><li>Crea una <b>cel·la</b> dins d'una fila de la<br>
-                                    taula (dades de la taula).</li></ul>
-                            </ol>
-    
-                </table>
-            </div>
-            <div class="der">
-                <img src="../img/Captura de pantalla 2024-10-22 130730.png"><!--imatge explicativa de com redactar es codi-->
-            </div>
-        </div>
-    </center> 
-    <br>
-    <center>
-    <div class="com">
-        <div class="izq">
-            <table>
-                <tr>
-                    <td><h2>Atributs de Taula</h2></td>
-                </tr>
-                <tr>
-                    <td>
-                        <ol>
-                            <li><b>Border</b></li>
-                            <ul><li>Afegeix una vora a la taula i a les cel·les.</li></ul>
-                            <li><b>cellpadding:</b></li>
-                            <ul><li>Defineix l'espai entre el contingut de la cel·la i<br>
-                                la vora de la cel·la.</li></ul>
-                            <li><b>cellspacing:</b></li>
-                            <ul><li>Controla l'espai entre les cel·les de la taula.</li></ul>
-                        </ol>
 
-            </table>
-        </div>
-        <div class="der">
-            <img src="../img/Captura de pantalla 2024-10-22 130525.png"><!--imatge explicativa de com redactar es codi-->
-        </div>
+<body>
+    <div class="fondo">
+        <center>
+            <h1>Taules bàsiques amb HTML</h1>
+        </center>
+        <br>
+        <br>
+        <center>
+            <div class="com">
+                <div class="izq">
+                    <table>
+                        <tr>
+                            <td>
+                                <h2>Atributs de Taula</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ol>
+                                    <li><b>Etiqueta &lt;table&gt;:</b></li>
+                                    <ul>
+                                        <li>L'etiqueta <b>&lt;table&gt;</b> defineix la taula i<br>
+                                            actua com el contenidor principal.</li>
+                                    </ul>
+                                    <li><b>Etiqueta &lt;tr&gt; (table row):</b></li>
+                                    <ul>
+                                        <li>Defineix una <b>fila</b> dins de la taula.</li>
+                                    </ul>
+                                    <li><b>Etiqueta &lt;td&gt; (table data):</b></li>
+                                    <ul>
+                                        <li>Crea una <b>cel·la</b> dins d'una fila de la<br>
+                                            taula (dades de la taula).</li>
+                                    </ul>
+                                </ol>
+
+                    </table>
+                </div>
+                <div class="der">
+                    <img
+                        src="../img/Captura de pantalla 2024-10-22 130730.png"><!--imatge explicativa de com redactar es codi-->
+                </div>
+            </div>
+        </center>
+        <br>
+        <center>
+            <div class="com">
+                <div class="izq">
+                    <table>
+                        <tr>
+                            <td>
+                                <h2>Atributs de Taula</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ol>
+                                    <li><b>Border</b></li>
+                                    <ul>
+                                        <li>Afegeix una vora a la taula i a les cel·les.</li>
+                                    </ul>
+                                    <li><b>cellpadding:</b></li>
+                                    <ul>
+                                        <li>Defineix l'espai entre el contingut de la cel·la i<br>
+                                            la vora de la cel·la.</li>
+                                    </ul>
+                                    <li><b>cellspacing:</b></li>
+                                    <ul>
+                                        <li>Controla l'espai entre les cel·les de la taula.</li>
+                                    </ul>
+                                </ol>
+
+                    </table>
+                </div>
+                <div class="der">
+                    <img
+                        src="../img/Captura de pantalla 2024-10-22 130525.png"><!--imatge explicativa de com redactar es codi-->
+                </div>
+            </div>
+        </center>
     </div>
-    </center> 
 </body>
+
 </html>

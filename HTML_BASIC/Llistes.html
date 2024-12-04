@@ -14,25 +14,8 @@
     <link rel="icon" href="../img/logohtml.png" type="image/x-icon">
     <title>Izan Moreno Nuñez</title>
     <link rel="stylesheet" href="../CSS/HTML.css">
-    <style>
-        .com {
-            display: flex;
-        }
-
-        .con {
-            display: flex;
-        }
-
-        .izq {
-            width: 50%;
-        }
-
-        .der {
-            width: 50%;
-        }
-    </style>
 </head>
-<header>
+<header style="position: sticky; top: 0px;">
     <div class="header-html">
         <a href="../index_Html.html">
             MENÚ
@@ -56,94 +39,96 @@
 </header>
 
 <body>
-    <center>
-        <h1>LLISTES</h1>
-    </center>
-    <div class="block">
-        <div style="padding-right: 100px;margin-bottom: 50px;">
-            <table>
-                <tr>
-                    <td>
-                        <h2>Llistes No Ordenades (&lt;ul&gt;):</h2>
-                        <ol>
-                            <li>S'utilitzen per a llistes d'elements sense un ordre
-                                específic.</li>
-                            <li>Els elements es mostren amb vinyetes o altres
-                                símbols abans de cada ítem.</li>
-                            <li>Cada element de la llista es defineix amb l'etiqueta
-                                &lt;li&gt; (list item).</li>
-                        </ol>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <center><img src="../img/Captura de pantalla 2024-10-22 123223.png"></center>
-                        <!--imatge explicativa de com redactar es codi-->
-                    </td>
-                </tr>
-            </table>
+    <div class="fondo">
+        <center>
+            <h1>LLISTES</h1>
+        </center>
+        <div class="block">
+            <div style="margin-bottom: 50px;">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Llistes No Ordenades (&lt;ul&gt;):</h2>
+                            <ol>
+                                <li>S'utilitzen per a llistes d'elements sense un ordre
+                                    específic.</li>
+                                <li>Els elements es mostren amb vinyetes o altres
+                                    símbols abans de cada ítem.</li>
+                                <li>Cada element de la llista es defineix amb l'etiqueta
+                                    &lt;li&gt; (list item).</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center><img src="../img/Captura de pantalla 2024-10-22 123223.png"></center>
+                            <!--imatge explicativa de com redactar es codi-->
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Llistes Ordenades (&lt;ol&gt;):</h2>
+                            <ol>
+                                <li>S'utilitzen per a llistes en què l'ordre dels
+                                    elements és rellevant.</li>
+                                <li>Els elements es numeren automàticament (1, 2,
+                                    3, etc.).</li>
+                                <li>Cada element de la llista també es defineix amb
+                                    &lt;li&gt;.</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center><img src="../img/Captura de pantalla 2024-10-22 123228.png"></center>
+                            <!--imatge explicativa de com redactar es codi-->
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <h2>Llistes Ordenades (&lt;ol&gt;):</h2>
-                        <ol>
-                            <li>S'utilitzen per a llistes en què l'ordre dels
-                                elements és rellevant.</li>
-                            <li>Els elements es numeren automàticament (1, 2,
-                                3, etc.).</li>
-                            <li>Cada element de la llista també es defineix amb
-                                &lt;li&gt;.</li>
-                        </ol>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <center><img src="../img/Captura de pantalla 2024-10-22 123228.png"></center>
-                        <!--imatge explicativa de com redactar es codi-->
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="block">
-        <div class="block-vertical-2">
-            <div>
-                <b>Atributs de llistes:</b>
-            </div>
-            <div>
-                <b>Descripció</b>
-            </div>
-            <div>
-                <b>Atribut type (per a llistes ordenades &lt;ol&gt;):</b>
-            </div>
-            <div>
-                <li>Es pot utilitzar per definir el tipus de
-                    numeració de la llista:</li>
-                    <ul>
+        <div class="block">
+            <div class="block-vertical-2">
+                <div>
+                    <b>Atributs de llistes:</b>
+                </div>
+                <div>
+                    <b>Descripció</b>
+                </div>
+                <div style="margin-top: 60px;">
+                    <b>Atribut type (per a llistes ordenades &lt;ol&gt;):</b>
+                </div>
+                <div>
+                    <li>Es pot utilitzar per definir el tipus de
+                        numeració de la llista:</li>
+                    <ul style="text-align: start;">
                         <li><b>1</b>: Nombres (predeterminat).</li>
                         <li><b>A</b>: Majúscules.</li>
                         <li><b>a</b>: Minúscules.</li>
                         <li><b>I</b>: Números romans en majúscules.</li>
                         <li><b>i</b>: Números romans en minúscules.</li>
                     </ul>
-            </div>
-            <div>
-                <b>Atribut start (per a llistes ordenades &lt;ol&gt;):</b>
-            </div>
-            <div>
-                <li>Defineix el número o lletra per començar la
-                    numeració.</li>
+                </div>
+                <div style="margin-top: 20px;">
+                    <b>Atribut start (per a llistes ordenades &lt;ol&gt;):</b>
+                </div>
+                <div>
+                    <ul><li>Defineix el número o lletra per començar la
+                        numeració.</li></ul>
+                </div>
             </div>
         </div>
         <div style="display: flex;flex-direction: column;">
-            <img src="../img/Captura de pantalla 2024-10-22 125235.png"><!--imatge explicativa de com redactar es codi-->
+            <img
+                src="../img/Captura de pantalla 2024-10-22 125235.png"><!--imatge explicativa de com redactar es codi-->
             <button style="margin-top: 50px;" class="trigger" popovertarget="popoverContent">
                 IMPORTANT
             </button>
             <div id="popoverContent" popover>
-                <img src="../img/Captura de pantalla 2024-10-22 125238.png"><!--imatge sobre consells a tenir en compta--> 
+                <img
+                    src="../img/Captura de pantalla 2024-10-22 125238.png"><!--imatge sobre consells a tenir en compta-->
             </div>
         </div>
     </div>

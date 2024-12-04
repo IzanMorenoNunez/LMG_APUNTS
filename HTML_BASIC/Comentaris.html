@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head><!--metadades de la pàgina-->
     <meta charset="UTF-8">
     <meta name="description" content="Aquests son els apunts de Llenguatge de Marques de GSDAM">
@@ -14,7 +15,7 @@
     <title>Izan Moreno Nuñez</title>
     <link rel="stylesheet" href="../CSS/HTML.css">
 </head>
-<header>
+<header style="position: sticky; top: 0px;">
     <div class="header-html">
         <a href="../index_Html.html">
             MENÚ
@@ -36,29 +37,37 @@
         </a>
     </div>
 </header>
+
 <body>
-    <center><h1>COMENTARIS EN HTML</h1></center>
-    <center>
-        <div class="block-vertical" style="margin-left: 30%;margin-right: 30%; grid-gap: 20px;padding-bottom: 60px;">
-            <li>Els <b>comentaris</b> en HTML són línies de text que s'afegeixen al codi <br>
-                per deixar notes o explicacions, però que <b> no són visibles </b> per als usuaris <br>
-                finals en lapàgina web.</li>
-            <li>S'utilitzen per ajudar els desenvolupadors a <b>documentar el codi</b><br>
-                , descriure seccions específiques o deixar indicacions per a futurs desenvolupadors.</li>
-            <li>Els comentaris <b>no afecten el rendiment ni la visualització </b> de la pàgina <br>
-                 en el navegador.</li>    
-        </div>
-        <div class="block" style="padding-top: 50px;">
-            <div style="margin-left: auto;">
-                <img src="../img/Captura de pantalla 2024-10-17 130401.png"><!--imatge explicativa de com redactar es codi-->
+    <div class="fondo">
+        <center>
+            <h1>COMENTARIS EN HTML</h1>
+        </center>
+        <center>
+            <div class="block-vertical" style="margin-bottom: 100px;">
+                <ul><li>Els <b>comentaris</b> en HTML són línies de text que s'afegeixen al codi 
+                    per deixar notes o explicacions, però que <b> no són visibles </b> per als usuaris 
+                    finals en lapàgina web.</li></ul>
+                <ul><li>S'utilitzen per ajudar els desenvolupadors a <b>documentar el codi</b>
+                    , descriure seccions específiques o deixar indicacions per a futurs desenvolupadors.</li></ul>
+                <ul><li>Els comentaris <b>no afecten el rendiment ni la visualització </b> de la pàgina 
+                    en el navegador.</li></ul>
             </div>
-            <button class="trigger" popovertarget="popoverContent">
-                IMPORTANT
-            </button>
-            <div id="popoverContent" popover>
-                <img src="../img/Captura de pantalla 2024-10-17 130423.png"><!--imatge sobre consells a tenir en compta--> 
+            <div class="block" style="padding-top: 50px;">
+                <div style="margin-left: auto;">
+                    <img
+                        src="../img/Captura de pantalla 2024-10-17 130401.png"><!--imatge explicativa de com redactar es codi-->
+                </div>
+                <button class="trigger" popovertarget="popoverContent">
+                    IMPORTANT
+                </button>
+                <div id="popoverContent" popover>
+                    <img
+                        src="../img/Captura de pantalla 2024-10-17 130423.png"><!--imatge sobre consells a tenir en compta-->
+                </div>
             </div>
-        </div>
-    </center> 
+        </center>
+    </div>
 </body>
+
 </html>

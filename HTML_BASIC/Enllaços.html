@@ -28,7 +28,7 @@
         }
     </style>
 </head>
-<header>
+<header style="position: sticky; top: 0px;">
     <div class="header-html">
         <a href="../index_Html.html">
             MENÚ
@@ -52,64 +52,69 @@
 </header>
 
 <body>
-    <center>
-        <h1>ENLLAÇOS</h1>
-    </center>
-    <br>
-    <div class="block-vertical" style="margin-bottom: 50px;">
-        <div>
-            <li>L'etiqueta <b>&lt;a&gt;</b> s'utilitza per crear enllaços (links) a altres pàgines web, documents,<br>
-                seccions dins de la mateixa pàgina o qualsevol altre recurs.</li>
+    <div class="fondo">
+        <center>
+            <h1>ENLLAÇOS</h1>
+        </center>
+        <br>
+        <div class="block-vertical" style="margin-bottom: 190px;font-size: larger;">
+            <div>
+                <ul><li>L'etiqueta <b>&lt;a&gt;</b> s'utilitza per crear enllaços (links) a altres pàgines web,
+                    documents,
+                    seccions dins de la mateixa pàgina o qualsevol altre recurs.</li></ul>
+            </div>
+            <div>
+                <ul><li>L'element essencial per als enllaços és l'atribut <b>href</b> que defineix l'URL a la qual 
+                    redirigeix l'usuari.</li></ul>
+            </div>
+            <div>
+                <ul><li>El text entre l'etiqueta d'obertura i la de tancament és el que els usuaris veuran i podran clicar
+                    
+                    per ser redirigits.</li></ul>
+            </div>
         </div>
-        <div>
-            <li>L'element essencial per als enllaços és l'atribut <b>href</b> que defineix l'URL a la qual <br>
-                redirigeix l'usuari.</li>
-        </div>
-        <div>
-            <li>El text entre l'etiqueta d'obertura i la de tancament és el que els usuaris veuran i podran clicar <br>
-                per ser redirigits.</li>
-        </div>
-    </div>
-    <div class="block">
-        <div class="block-vertical-2">
-            <div>
-                <b>Atributs d'enllaços</b>
-            </div>
-            <div>
-                <b>Descripció</b>
-            </div>
-            <div>
-                <b>href (hypertext reference):</b>
-            </div>
-            <div>
-                <li>Defineix la <b>URL</b> de destinació de l'enllaç.</li>
-                <li>Pot ser un enllaç absolut (una URL completa)<br>
-                    o relatiu (camí dins del mateix domini).</li>
-            </div>
-            <div>
-                <b>target:</b>
-            </div>
-            <div>
-                <li>Defineix <b>on s'obrirà</b> l'enllaç: a la mateixa pestanya,<br>
-                    en una nova pestanya o en un nou marc.</li>
-                <li>Els valors més habituals són:</li>
-                <ul>
-                    <li><b>_blank</b>: Obre l'enllaç en una <b>nova pestanya.</b></li>
-                    <li><b>_self</b>: Obre l'enllaç a la <b>mateixa pestanya</b><br>
-                        (valor predeterminat).</li>
-                </ul>
+        <div class="block">
+            <div class="block-vertical-2">
+                <div>
+                    <b>Atributs d'enllaços</b>
+                </div>
+                <div>
+                    <b>Descripció</b>
+                </div>
+                <div style="margin-top: 50px;">
+                    <b>href (hypertext reference):</b>
+                </div>
+                <div>
+                    <ul><li>Defineix la <b>URL</b> de destinació de l'enllaç.</li></ul>
+                    <ul><li>Pot ser un enllaç absolut (una URL completa)<br>
+                        o relatiu (camí dins del mateix domini).</li></ul>
+                </div>
+                <div style="margin-top: 100px;">
+                    <b>target:</b>
+                </div>
+                <div>
+                    <ul><li>Defineix <b>on s'obrirà</b> l'enllaç: a la mateixa pestanya,<br>
+                        en una nova pestanya o en un nou marc.</li></ul>
+                    <ul><li>Els valors més habituals són:</li></ul>
+                    <ul>
+                        <ul><li><b>_blank</b>: Obre l'enllaç en una <b>nova pestanya.</b></li></ul>
+                        <ul><li><b>_self</b>: Obre l'enllaç a la <b>mateixa pestanya</b><br>
+                            (valor predeterminat).</li></ul>
+                    </ul>
+                </div>
             </div>
         </div>
         <div style="display: flex;flex-direction: column;">
-            <div>
+            <div style="margin-left: 100px;">
                 <img
                     src="../img/Captura de pantalla 2024-10-17 173616.png"><!--imatge explicativa de com redactar es codi-->
             </div>
-            <button class="trigger" popovertarget="popoverContent">
+            <button style="margin-top: 50px;" class="trigger" popovertarget="popoverContent">
                 IMPORTANT
             </button>
             <div id="popoverContent" popover>
-                <img src="../img/Captura de pantalla 2024-10-17 173622.png"><!--imatge sobre consells a tenir en compta--> 
+                <img
+                    src="../img/Captura de pantalla 2024-10-17 173622.png"><!--imatge sobre consells a tenir en compta-->
             </div>
         </div>
     </div>
