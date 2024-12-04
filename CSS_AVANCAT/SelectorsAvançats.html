@@ -35,5 +35,177 @@
     </div>
 </header>
 <body>
+    <section>
+        <div class="fondo grid">
+            <h1 class="element element-gran">SELECTORS AVANÇATS EN CSS</h1>
+            <div class="element-entradilla">
+                Els selectors avançats en CSS permeten aplicar estils amb molta més precisió i flexibilitat, permetent seleccionar
+                elements específics en funció de la seva posició, relació amb altres elements o atributs.
+            </div>
+            <div class="element" style="text-align: start;padding: 30px">
+                <div>
+                    <b>1. Selectors d'atribut</b>
+                    <br>
+                    <br>
+                    Els selectors d'atribut permeten aplicar estils als elements HTML que contenen un determinat atribut o valor d'atribut. Són especialment útils per estilitzar
+                    elements de formularis o en casos en què utilitzis atributs personalitzats.
+                </div>
+                <div style="margin-top: 30px;">
+                    <b>Exemples comuns:</b>
+                </div>
+                <div style="display: grid;grid-template-columns: 1fr 1fr 1fr;grid-gap: 10px; height: auto;margin: auto;justify-content: center;font-size: small;margin-top: 30px;">
+                    <div class="element">
+                        <b>Seleccionar elements amb un atribut específic:</b>
+                        <img src="../img/Captura de pantalla 2024-12-04 230608.png">
+                        En aquest exemple, tots els elements &lt;input&gt; que tenen
+                        l'atribut type="text" tindran una vora blava.
+                    </div>
+                    <div class="element">
+                        <b>Seleccionar elements amb un atribut
+                        que conté un valor específic:</b>
+                        <img src="../img/Captura de pantalla 2024-12-04 230613.png">
+                        Aquest exemple aplica el color verd a tots els enllaços (&lt;a&gt;)
+                        que contenen la paraula "example" en l'atribut href.
+                    </div>
+                    <div class="element">
+                       <b>Seleccionar elements amb un valor d'atribut
+                        que comença amb un valor específic:</b>
+                        <img src="../img/Captura de pantalla 2024-12-04 230618.png">
+                        Això aplica una vora negra a totes les imatges (&lt;img&gt;) que
+                        tenen una URL src que comença per "https".
+                    </div>
+                    <div class="element">
+                        <b>Seleccionar tots els elements amb un atribut:</b>
+                        <img src="../img/Captura de pantalla 2024-12-04 230624.png">
+                        <br>
+                        En aquest exemple, tots els elements que tenen l'atribut
+                        personalitzat tindran una vora vermella.
+                    </div>
+                </div>
+            </div>
+            <div class="element" style="text-align: start;padding: 30px">
+                <div>
+                    <b>2. Selectors combinats</b>
+                    <br>
+                    <br>
+                    Els selectors combinats permeten seleccionar elements que tenen una relació específica amb altres elements dins del document. Els combinadors més
+                    comuns són:
+                </div>
+                <div style="display: grid;grid-template-columns: 1fr 1fr;grid-gap: 10px; height: auto;margin: auto;justify-content: center;font-size: small;margin-top: 30px;">
+                    <div class="element">
+                        <b>a) Combinador de descendents (<)</b>
+                        <br>
+                        Selecciona tots els elements que són descendents (fills, nets, etc.) d'un element pare.
+                        <br>
+                        <img src="../img/Captura de pantalla 2024-12-04 233123.png">
+                        <br>
+                        Això aplica el color vermell a tots els paràgrafs (&lt;p&gt;) que
+                        són descendents de qualsevol element &lt;div&gt;.
+                    </div>
+                    <div class="element">
+                        <b>b) Combinador de fills directes (>)</b>
+                        <br>
+                        Selecciona només els fills directes d'un element pare.
+                        <br>
+                        <img src="../img/Captura de pantalla 2024-12-04 233128.png">
+                        <br>
+                        En aquest cas, només els paràgrafs que són fills immediats d'un
+                        &lt;div&gt; tindran el text de color blau. Els nets o altres descendents no
+                        es veuran afectats.
+                    </div>
+                    <div class="element">
+                        <b>c) Combinador de germans adjacents (+)</b>
+                        <br>
+                        Selecciona l'element que està just després d'un altre element germà..
+                        <br>
+                        <img src="../img/Captura de pantalla 2024-12-04 233132.png">
+                        <br>
+                        Aquest exemple fa que el primer paràgraf (&lt;p&gt;) que segueix
+                            directament un títol (&lt;h1&gt;) es mostri en negreta.
+                    </div>
+                    <div class="element">
+                        <b>d) Combinador de germans generals (~)</b>
+                        <br>
+                        Selecciona tots els germans que segueixen un element determinat dins del mateix pare.
+                        <br>
+                        <img src="../img/Captura de pantalla 2024-12-04 233136.png">
+                        <br>
+                        Aquest exemple fa que tots els paràgrafs (&lt;p&gt;) que
+                        segueixen un &lt;h2&gt; dins del mateix contenidor tinguin el text de color gris.
+                    </div>
+                </div>
+            </div>
+            <div class="element" style="text-align: start;padding: 30px">
+                <div>
+                    <b>3. Selectors pseudo-classe</b>
+                    <br>
+                    <br>
+                    Les pseudo-classes són selectors que s'utilitzen per aplicar estils a un element en un estat o condició particular. Això permet canviar l'estil d'un element
+                    quan l'usuari hi interactua o quan l'element compleix certs criteris.
+                </div>
+                <div style="display: grid;grid-template-columns: 1fr 1fr;grid-gap: 10px; height: auto;margin: auto;justify-content: center;font-size: small;margin-top: 30px;">
+                    <div class="element">
+                        <b>:hover: Aplica estils quan l'usuari passa el ratolí per sobre de l'element.</b>
+                        <br>
+                        <img src="../img/Captura de pantalla 2024-12-04 233514.png">
+                        <br>
+                        Aquest exemple canvia el color d'un enllaç a vermell
+                        quan l'usuari passa el cursor per sobre.
+                    </div>
+                    <div class="element">
+                        <b>:nth-child(): Selecciona elements en funció de la seva posició entre els seus germans.</b>
+                        <br>
+                        <img src="../img/Captura de pantalla 2024-12-04 233518.png">
+                        <br>
+                        Això aplica un color de fons gris clar a les files imparells d'una taula.
+                    </div>
+                    <div class="element">
+                        <b>:first-of-type: Selecciona el primer element del seu tipus dins del seu pare.</b>
+                        <br>
+                        <img src="../img/Captura de pantalla 2024-12-04 233523.png">
+                        <br>
+                        En aquest exemple, el primer paràgraf dins de cada element
+                        pare tindrà el text en negreta.
+                    </div>
+                    <div class="element">
+                        <b>:not(): Selecciona tots els elements excepte aquells que coincideixin amb el selector especificat.</b>
+                        <br>
+                        <img src="../img/Captura de pantalla 2024-12-04 233527.png">
+                        <br>
+                        Això aplica un color de fons groc a tots els &lt;div&gt; que no
+                        tenen la classe important.
+                    </div>
+                </div>
+            </div>
+            <div class="element" style="text-align: start;padding: 30px">
+                <div>
+                    <b>4. Selectors pseudo-element</b>
+                    <br>
+                    <br>
+                    Els pseudo-elements permeten aplicar estils a una part específica d'un element, com el seu contingut abans o després, o una línia de text. Els pseudo-
+                    elements més comuns són ::before i ::after:
+                </div>
+                <div style="margin-top: 30px;" class="element">
+                    <div>
+                        <b>::before:</b> Afegeix contingut o estils abans del contingut real d'un element.
+                        <br>
+                        <img src="../img/Captura de pantalla 2024-12-04 233918.png">
+                        <br>
+                        <p style="font-size: x-small;">
+                            Aquest exemple afegeix una estrella daurada abans de cada &lt;h1&gt;.
+                        </p>
+                    </div>
+                    <div>
+                        <b>::after:</b> Afegeix contingut o estils després del contingut real d'un element.
+                        <br>
+                        <img src="../img/Captura de pantalla 2024-12-04 233924.png">
+                        <p style="font-size: x-small;">
+                            Això afegeix la paraula "(Final)" en gris després de cada paràgraf.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
