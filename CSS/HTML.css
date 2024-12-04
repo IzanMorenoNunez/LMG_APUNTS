@@ -90,3 +90,18 @@ a:hover {
 ::backdrop {
     backdrop-filter: blur(3px);
 }
+
+.fondo{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 191, 191);
+    border-radius: 30px;
+    justify-content: center;
+    margin: 50px auto;
+    width: 700px;
+    padding: 50px;
+}
+
+img{
+    border-radius: 25px;
+}
