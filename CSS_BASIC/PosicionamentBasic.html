@@ -10,11 +10,11 @@
     <meta property="og:description" content="Apunts de LMG de 1r GSDAM">
     <meta property="og:image" content="logo.png">
     <meta property="og:url" content="file:///C:/Users/34637/OneDrive/Documentos/GitHub/LMG_APUNTS/index.html">
-    <link rel="icon" href="logocss.png" type="image/x-icon">
+    <link rel="icon" href="../img/logocss.png" type="image/x-icon">
     <title>Izan Moreno Nuñez</title>
     <link rel="stylesheet" href="../CSS/CSS.css">
 </head>
-<header>
+<header style="position: sticky; top: 0px;">
     <div class="header-css">
         <a href="../index_Css.html">
             MENÚ
@@ -35,8 +35,160 @@
     </div>
 </header>
 <body>
-    <center>
-        <h1></h1>
-    </center>
+    <section>
+        <div class="fondo grid">
+            <h1 class="element element-gran">POSICIONAMENT BÀSIC EN CSS</h1>
+            <div class="element-entradilla">
+                El CSS ofereix diverses tècniques per controlar la ubicació dels elements en una pàgina web. La propietat clau per al posicionament és
+                position, que té diversos valors per a definir com es posiciona un element respecte al seu element contenidor o al document.
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 75px;">
+                <div>
+                    <b>1. La propietat position</b>
+                    <br>
+                    <br>
+                    La propietat position permet especificar el mètode de posicionament d’un element. Els valors més comuns són:
+                    <ol>
+                        <li>
+                            <b>static</b> (per defecte): Els elements es posicionen de manera normal, seguint el flux del document. No es pot ajustar manualment amb
+                            coordenades.
+                        </li>
+                        <li>
+                            <b>relative:</b> Es posiciona l'element respecte a la seva posició original en el flux del document. Es poden utilitzar coordenades per moure’l
+                            lleugerament (dalt, baix, esquerra o dreta).
+                        </li>
+                        <li>
+                            <b>absolute:</b> L'element es treu del flux del document i es posiciona respecte al seu element contenidor més proper que tingui una posició
+                            definida. Si no hi ha cap contenidor definit, es posiciona respecte a la pàgina.
+                        </li>
+                        <li>
+                            <b>fixed:</b> L'element es treu del flux del document i es posiciona respecte a la finestra del navegador. Es manté fix fins i tot quan l'usuari fa
+                            desplaçaments.
+                        </li>
+                        <li>
+                            <b>sticky:</b> L'element es comporta com relative fins que arriba a un punt en el desplaçament de la pàgina, després del qual es comporta
+                            com fixed.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: column;padding: 75px;">
+                <div>
+                    <b>2. Propietats de posicionament (top, right, bottom, left)</b>
+                    <br>
+                    <br>
+                    Quan es defineix la propietat position com relative, absolute, fixed o sticky, pots utilitzar les propietats top, right, bottom, i left per
+                    especificar la distància de l'element respecte als seus límits.
+                    <br>
+                    <br>
+                    <b>Exemples</b>
+                    <ul>
+                        <li>
+                            <b>top: 10px;:</b> Moure l'element 10 píxels cap avall des del límit superior.
+                        </li>
+                        <li>
+                            <b>right: 20px;:</b> Moure l'element 20 píxels cap a l'esquerra des del límit dret.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img width="500px" style="margin-left: 35px;margin-top: 50px; border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-04 174629.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 75px;">
+                <div>
+                    <b>3. Posicionament absolut (position: absolute)</b>
+                    <br>
+                    <br>
+                    Amb position: absolute, l'element es treu completament del flux
+                    normal del document i es posiciona respecte al seu element
+                    contenidor més proper amb position: relative, absolute, o fixed.
+                </div>
+                <div>
+                    <img style="margin-left: 50px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-04 174636.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 75px;">
+                <div>
+                    <b>4. Posicionament fix (position: fixed)</b>
+                    <br>
+                    <br>
+                    Els elements amb position: fixed es mantenen en una ubicació fixa
+                    a la pantalla fins i tot quan l'usuari fa desplaçaments. Es
+                    posicionen respecte a la finestra del navegador.
+                </div>
+                <div>
+                    <img style="margin-left: 50px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-04 174645.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 75px;">
+                <div>
+                    <b>5. Posicionament enganxós (position: sticky)</b>
+                    <br>
+                    <br>
+                    Els elements amb position: sticky es comporten com relative fins
+                    que l'usuari es desplaça per la pàgina i arriba a un punt
+                    especificat, després del qual l'element es comporta com fixed.
+                </div>
+                <div>
+                    <img style="margin-left: 50px;margin-top: 40px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-04 174651.png">
+                </div>
+            </div>
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 75px;">
+                <div>
+                    <b>6. Propietat z-index</b>
+                    <br>
+                    <br>
+                    La propietat z-index es fa servir per controlar l'ordre de
+                    superposició dels elements posicionats (relative, absolute, fixed o
+                    sticky). Els valors més alts de z-index col·loquen l'element davant
+                    d'altres elements amb valors inferiors.
+                </div>
+                <div>
+                    <img style="margin-left: 50px;margin-top: 50px;border-radius: 10px;"
+                        src="../img/Captura de pantalla 2024-12-04 174656.png">
+                </div>
+            </div>
+        </div>
+        <div class="fondo grid">
+            <div class="element" style="text-align: start;display: flex;flex-direction: row;">
+                <div>
+                    <img width="300px" style="margin-right: 30px;border-radius: 5px;" src="../img/Captura de pantalla 2024-12-04 174702.png">
+                </div>
+                <div style="margin-top: 10px;">
+                    <b>Resum de les propietats vistes:</b>
+                    <ol style="margin-top: 60px;">
+                        <li>
+                            <b>position: static:</b> Posicionament per defecte.
+                        </li>
+                        <li>
+                            <b>position: relative:</b> L'element es mou
+                            respecte a la seva posició original.
+                        </li>
+                        <li>
+                            <b>position: absolute:</b> L'element es posiciona
+                            respecte al seu contenidor més proper.
+                        </li>
+                        <li>
+                            <b>position: fixed:</b> L'element es fixa respecte a
+                            la finestra del navegador.
+                        </li>
+                        <li>
+                            <b>position: sticky:</b> L'element es comporta
+                            com relative fins que arriba a una posició
+                            fixada, on es manté enganxós.
+                        </li>
+                        <li>
+                            <b>z-index:</b> Controla l'ordre de superposició
+                            dels elements.
+                        </li>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
