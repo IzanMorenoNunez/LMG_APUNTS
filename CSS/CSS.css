@@ -24,7 +24,7 @@ a , p, li, h1{
 a{
     text-decoration: none;
     color: black;
-    transition: color 0.5s ease, ;
+    transition: color 0.5s ease;
 }
 
 a:hover {
@@ -40,13 +40,12 @@ h1{
     align-items: center;
     justify-content: center;
 }
-
+ 
 .grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px; 
     height: auto;
-    margin: auto;
     justify-content: center;
 }
 .element {
@@ -84,6 +83,13 @@ img{
     border-radius: 10px;
 }
 
+.grid-img{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-gap: 10px; 
+    height: auto;
+    justify-content: center;
+}
 
 
 
