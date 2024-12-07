@@ -44,9 +44,65 @@
                 de manera nativa, utilitzant només HTML i CSS, sense necessitat de JavaScript. Aquesta API facilita la creació de
                 components com menús, suggeriments o notificacions que apareixen sobre el contingut existent.
             </div>
-            <div class="element" style="text-align: start;display: flex;flex-direction: row;padding: 100px;">
+            <div class="element" style="text-align: start;padding: 10px 100px;">
+                <h3>Atributs HTML rellevants</h3>
+                <br>
+                <b>popover:</b> Atribut global que designa un element com a popover.
+                <ol>
+                    <li>
+                        <b>"auto"</b> (per defecte): El popover es mostra i s'oculta automàticament.
+                    </li>
+                    <li>
+                        <b>"manual":</b> El control de la visibilitat del popover es gestiona manualment.
+                    </li>
+                </ol>
+                <br>
+                <b>popovertarget:</b> Atribut que especifica l'ID de l'element popover que es controlarà.
+                <br>
+                <br>
+                <b>popovertargetaction:</b> Defineix l'acció a realitzar sobre el popover.
+                <ol>
+                    <li>
+                        <b>"show":</b> Mostra el popover.
+                    </li>
+                    <li>
+                        <b>"hide":</b> Oculta el popover.
+                    </li>
+                    <li>
+                        <b>"toggle":</b> Alterna entre mostrar i ocultar el popover.
+                    </li>
+                </ol>
+            </div>
+            <div style="display: flex;flex-direction: row;">
+                <div style="margin-top: 80px;">
+                    <div class="element" style="text-align: start;padding: 5px;">
+                        <h3>Explicació de l'exemple:</h3>
+                        <ol>
+                            <li>
+                                El botó amb la classe trigger té l'atribut
+                                popovertarget que apunta a l'ID popoverContent,
+                                indicant que aquest botó controlarà la visibilitat del
+                                popover.
+                            </li>
+                            <li>
+                                El div amb l'ID popoverContent té l'atribut popover,
+                                designant-lo com a contingut emergent.
+                            </li>
+                            <li>
+                                Quan l'usuari fa clic al botó, el popover es mostra o
+                                s'oculta automàticament.
+                            </li>
+                            <li>
+                                L'estil aplicat al pseudo-element ::backdrop crea un
+                                efecte de desenfocament al fons quan el popover
+                                està obert.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
                 <div>
-                    <h3>Atributs HTML rellevants</h3>
+                    <img style="margin-left: 10px;"
+                    src="../img/Captura de pantalla 2024-12-07 140916.png">
                 </div>
             </div>
         </div>
