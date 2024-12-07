@@ -91,6 +91,15 @@ img{
     justify-content: center;
 }
 
+.grid-layouts{
+    display: grid;
+    grid-template-columns: 0.55fr 0.4fr 0.55fr;
+    grid-gap: 20px; 
+    height: auto;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
 
 
 

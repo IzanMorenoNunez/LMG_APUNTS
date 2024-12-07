@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Aquests son els apunts de Llenguatge de Marques de GSDAM">
@@ -30,13 +31,177 @@
         <a href="UIUX.html" title="">9</a>
         <a href="OptimitzacióRendiment.html" title="">10</a>
         <a href="EinesModernes.html" title="">11</a>
+        <a href="../index_Html.html">
             <img src="../img/html-png.png" width="30px">
         </a>
     </div>
 </header>
+
 <body>
-    <center>
-        <h1></h1>
-    </center>
+    <section>
+        <div class="fondo grid">
+            <h1 class="element element-gran">LAYOUTS AMB FLEXBOX I GRID</h1>
+            <div class="grid-layouts">
+                <div>
+                    <h2>Flexbox</h2>
+                    <b>Casos comuns per Flexbox:</b>
+                    <ol>
+                        <li>
+                            Quan vols alinear elements en fila o columna, com
+                            botons en una barra de navegació o imatges en una
+                            galeria.
+                        </li>
+                        <li>
+                            Quan vols distribuir l'espai entre elements en una fila
+                            (per exemple, centrant un element o espaiant-los
+                            uniformement).
+                        </li>
+                        <li>
+                            Quan els elements han de créixer o reduir-se per
+                            omplir l'espai disponible, com en una barra lateral o
+                            una fila de cartes.
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <img width="200px" style="padding-top: 150px;" src="../img/vs.png">
+                </div>
+                <div>
+                    <h2>Grid</h2>
+                    <b>Casos comuns per CSS Grid:</b>
+                    <ol>
+                        <li>
+                            Quan vols crear una pàgina amb una estructura
+                            complexa (com una pàgina amb capçalera, barra
+                            lateral, contingut principal i peu de pàgina).
+                        </li>
+                        <li>
+                            Quan tens un disseny en format de quadrícula
+                            amb files i columnes, com un tauler de fotos o un
+                            disseny de cartes de productes.
+                        </li>
+                        <li>
+                            Quan vols controlar exactament on va cada
+                            element en la quadrícula (pots col·locar elements
+                            en qualsevol cel·la de la quadrícula).
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="element-entradilla">
+                Quan es tracta de crear dissenys flexibles, adaptables i organitzats, Flexbox i CSS Grid són les dues
+                eines més
+                poderoses del CSS. Amb elles pots controlar la disposició dels elements en la pàgina, ja sigui en una
+                fila, columna o
+                en quadrícules complexes, adaptant els elements fàcilment a diferents mides de pantalla i requeriments.
+            </div>
+            <div class="element" style="text-align: start;padding: 5px;margin-top: 50px;">
+                <div>
+                    <b>1. Flexbox avançat: alineació, flex-shrink, align-self</b>
+                    <br>
+                    <br>
+                    Flexbox és una eina molt flexible per crear dissenys en fila o columna, on els elements s’alineen i
+                    ajusten automàticament segons l’espai
+                    disponible.
+                </div>
+                <div class="element" style="text-align: start;display: flex;flex-direction: column;padding: 80px;">
+                    <div style="padding-bottom: 30px;">
+                        <b>flex-shrink:</b> Controla com es redueix la mida d’un element quan no hi
+                        ha prou espai disponible. Valors més grans permeten que l'element es
+                        redueixi més.
+                        <img src="../img/Captura de pantalla 2024-12-07 132504.png">
+                    </div>
+                    <div>
+                        <b>align-self:</b> Permet que un sol element en un contenidor flex tingui
+                        una alineació diferent a la resta d’elements. Els valors poden ser
+                        flex-start, flex-end, center, baseline o stretch.
+                        <img src="../img/Captura de pantalla 2024-12-07 132514.png">
+                    </div>
+                </div>
+            </div>
+            <div class="element" style="text-align: start;padding: 5px;">
+                <div>
+                    <b>2. Grid Layout: cració de quadrícules</b>
+                    <br>
+                    <br>
+                    <b>CSS Grid Layout</b> és una eina més potent que Flexbox quan es tracta de crear layouts en dues
+                    dimensions (filera i columna). Grid permet col·locar elements en una quadrícula amb molta precisió,
+                    controlant la mida de les files i columnes, i permetent que els elements s’ajustin a l’espai
+                    disponible.
+                </div>
+            </div>
+            <div class="element" style="text-align: start;padding: 30px;">
+                <h3>Propietats clau en CSS Grid:</h3>
+                <div style="text-align: start;display: flex;flex-direction: row;padding: 10px;">
+                    <div>
+                        <li><b>grid-template-columns i grid-template-rows:</b></li>
+                        Defineixen el nombre i la mida de les columnes i files dins
+                        del contenidor grid.
+                    </div>
+                    <div>
+                        <img style="margin-left: 10px;" width="400px"
+                            src="../img/Captura de pantalla 2024-12-07 133751.png">
+                    </div>
+                </div>
+                <div style="text-align: start;display: flex;flex-direction: row;padding: 10px;">
+                    <div>
+                        <li><b>grid-column i grid-row:</b></li>
+                        Permeten que un
+                        element ocupi diverses columnes o files dins de
+                        la quadrícula.
+                    </div>
+                    <div>
+                        <img style="margin-left: 10px;" width="400px"
+                            src="../img/Captura de pantalla 2024-12-07 133756.png">
+                    </div>
+                </div>
+                <div style="text-align: start;display: flex;flex-direction: row;padding: 10px;">
+                    <div>
+                        <li><b>gap:</b></li>
+                        Defineix l'espai entre les files i columnes de
+                        la quadrícula.
+                    </div>
+                    <div>
+                        <img style="margin-left: 10px;" width="400px"
+                            src="../img/Captura de pantalla 2024-12-07 133801.png">
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;flex-direction: row;">
+                <div style="margin-top: 50px;">
+                    <div class="element" style="text-align: start;padding: 5px;">
+                        <div>
+                            <b>3. Ús combinat de Flexbox i Grid</b>
+                            <br>
+                            <br>
+                            Tot i que Flexbox i Grid es poden utilitzar per separat, sovint
+                            és útil combinar-los per obtenir el millor de tots dos. Per
+                            exemple, pots utilitzar Grid per definir la disposició general
+                            d'una pàgina (files i columnes) i utilitzar Flexbox dins
+                            d'algunes àrees per ajustar l'alineació dels elements.
+                        </div>
+                    </div>
+                    <div class="element" style="text-align: start;padding: 5px;">
+                        En aquest exemple:
+                        <ol>
+                            <li>
+                                El layout general s'estructura amb Grid, dividint la
+                                pàgina en columnes.
+                            </li>
+                            <li>
+                                Dins d'una de les cel·les del Grid, s'utilitza Flexbox per
+                                alinear els elements en una fila.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div>
+                    <img style="margin-left: 10px;"
+                    src="../img/Captura de pantalla 2024-12-07 135031.png">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
