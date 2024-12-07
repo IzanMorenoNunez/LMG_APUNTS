@@ -30,13 +30,155 @@
         <a href="UIUX.html" title="">9</a>
         <a href="OptimitzacióRendiment.html" title="">10</a>
         <a href="EinesModernes.html" title="">11</a>
+        <a>
             <img src="../img/html-png.png" width="30px">
         </a>
     </div>
 </header>
 <body>
-    <center>
-        <h1></h1>
-    </center>
+    <section>
+        <div class="fondo grid">
+            <h1 class="element element-gran">ANIMACIONS I TRANSICIONS EN CSS</h1>
+            <div class="element-entradilla">
+                Les animacions i transicions en CSS són eines potents que permeten afegir moviment i interacció visual a
+                les pàgines web, millorant l'experiència de l'usuari. Amb aquestes tècniques, pots controlar com els
+                elements canvien les seves propietats (com color, posició o opacitat) de manera suau i fluida.
+            </div>
+            <div class="element" style="text-align: start;padding: 40px;">
+                <div>
+                    <b>1. Ús de transicions (transition)</b>
+                    <br>
+                    <br>
+                    Les transicions CSS permeten que els canvis en les propietats d'un element, com el color, l'opacitat, la mida o la posició, siguin suaus en lloc de
+                    bruscos. Quan una propietat canvia, pots definir la velocitat del canvi utilitzant transition.
+                </div>
+                <div style="text-align: center;">
+                    <img style="margin-top: 20px;"
+                    src="../img/Captura de pantalla 2024-12-07 141631.png">
+                </div>
+                <div style="display: grid;grid-template-columns: 0.5fr 0.5fr;margin-top: 30px;">
+                    <div style="margin-right: 20px;">
+                        <b>Sintaxi bàsica de transition:</b>
+                        <img style="margin-top: 20px;" width="300px"
+                        src="../img/Captura de pantalla 2024-12-07 143329.png">
+                        <ol>
+                            <li>
+                                <b>Propietat:</b> La propietat CSS que vols animar (ex. background-color, transform,
+                                opacity, etc.).
+                            </li>
+                            <li>
+                                <b>Durada:</b> Quant de temps durarà la transició (ex. 0.5s, 2s).
+                            </li>
+                            <li>
+                                <b>Funció de temporització:</b> Controla com serà la velocitat de la transició (ex. ease,
+                                linear, ease-in-out).
+                            </li>
+                            <li>
+                                <b>Retard:</b> Opcional, defineix quant de temps trigarà a començar la transició (ex. 1s).
+                            </li>
+                        </ol>
+                    </div>
+                    <div>
+                        <b>Exemple de transició simple:</b>
+                        <img style="margin-top: 20px;"
+                        src="../img/Captura de pantalla 2024-12-07 143337.png">
+                    </div>
+                </div>
+            </div>
+            <div class="element" style="text-align: start;padding: 40px;">
+                <div>
+                    <b>2. Propietats de transició (transition-property)</b>
+                    <br>
+                    <br>
+                    Si vols animar diverses propietats simultàniament, pots especificar-les individualment amb transition-property o
+                    utilitzar all per aplicar la transició a totes les propietats que canviïn.
+                </div>
+                <div style="text-align: center;">
+                    <br>
+                    <b>Exemple animant múltiples propietats:</b>
+                    <img style="margin-top: 20px;"
+                    src="../img/Captura de pantalla 2024-12-07 143649.png">
+                    <br>
+                    <br>
+                </div>
+                <div>
+                    En aquest exemple:
+                    <ul>
+                    <li>
+                        Quan es passa el ratolí per sobre del div, l'amplada s'animarà durant 1 segon i el
+                        color de fons durant 0.5 segons, amb funcions de temporització diferents.
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="element" style="text-align: start;padding: 40px;">
+                <div>
+                    <b>3. Animacions clau amb @keyframes</b>
+                    <br>
+                    <br>
+                    Les animacions en CSS permeten crear moviments més complexos que les transicions. Utilitzen la regla @keyframes
+                    per definir punts intermedis del moviment o canvi de propietat, i s'apliquen a través de la propietat animation.
+                </div>
+                <div style="text-align: center;">
+                    <img style="margin-top: 20px;"
+                    src="../img/Captura de pantalla 2024-12-07 141631.png">
+                </div>
+                <div style="display: grid;grid-template-columns: 0.5fr 0.5fr;margin-top: 30px;">
+                    <div style="margin-right: 20px;">
+                        <b>Sintaxi de @keyframes:</b>
+                        <img style="margin-top: 20px;" width="220px"
+                        src="../img/Captura de pantalla 2024-12-07 144121.png">
+                    </div>
+                    <div>
+                        <b>Sintaxi de animation:</b>
+                        <img style="margin-top: 20px;" width="400px"
+                        src="../img/Captura de pantalla 2024-12-07 144127.png">
+                    </div>
+                </div>
+                <div style="padding: 20px 50px;">
+                    <b>Nom de l'animació:</b> El nom de l'animació definida amb @keyframes.<br>
+                    <b>Durada:</b> El temps que durarà l'animació.<br>
+                    <b>Funció de temporització:</b> Controla la velocitat de l'animació (linear, ease, etc.).<br>
+                    <b>Retard:</b> Opcional, quant de temps trigarà a començar l'animació.<br>
+                    <b>Cicles:</b> Quantes vegades es repetirà l'animació (infinite per repetir-la indefinidament).<br>
+                    <b>Direcció:</b> Opcional, si l'animació es juga de manera normal o inversa (normal, reverse,
+                    alternate).
+                </div>
+            </div>
+            <div class="element" style="text-align: start;padding: 40px;">
+                <div>
+                    <b>4. Propietats d'animació (animation-duration, animation-
+                        delay)</b>
+                    <br>
+                    <br>
+                    Les propietats d'animació et permeten personalitzar com es
+                    comporta una animació. Les més importants són:
+                    <ul>
+                        <li>
+                            <b>animation-duration:</b> Controla quant de temps dura
+                            l'animació.
+                        </li>
+                        <li>
+                            <b>animation-delay:</b> Defineix un retard abans que
+                            l'animació comenci.
+                        </li>
+                        <li>
+                            <b>animation-iteration-count:</b> Controla quantes vegades
+                            es repetirà l'animació (1, 3, infinite).
+                        </li>
+                        <li>
+                            <b>animation-direction:</b> Defineix si l'animació es juga cap
+                            endavant (normal), cap enrere (reverse) o alterna
+                            (alternate).
+                        </li>
+                    </ul>
+                </div>
+                <div style="text-align: center;margin-top: 30px;">
+                    <img
+                    src="../img/Captura de pantalla 2024-12-07 144800.png">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
