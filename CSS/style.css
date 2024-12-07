@@ -104,7 +104,7 @@ a:hover {
 }
 
 .HTML{
-    padding-right: 100px;
+    align-self: center;
 }
 
 .HTML img{
@@ -117,7 +117,7 @@ a:hover {
 }
 
 .CSS {
-    padding-left: 100px;
+    align-self: center;
 }
 
 .CSS img{
@@ -127,4 +127,34 @@ a:hover {
 
 .CSS img:hover{
 transform: scale(1.1);
+}
+
+@media (max-width: 1024px) and (min-width: 300px) {
+    .block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-bas-css{
+        align-self: center;
+    }
+    
+    .block-ava-css{
+        margin-top: 70px;
+        align-self: center;
+    }
+
+    .block-bas{
+        align-self: center;
+    }
+    
+    .block-ava{
+        margin-top: 70px;
+        align-self: center;
+    }
+     
+    .block-con{
+        margin-top: 70px;
+        align-self: center;
+    }
 }

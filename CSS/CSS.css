@@ -100,26 +100,3 @@ img{
     padding-bottom: 60px;
 }
 
-
-
-
-/*
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px; 
-    height: 400px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.element {
-    background-color: lightblue;
-    padding: 20px;
-    text-align: center;
-}
-    
-.element-gran {
-    grid-column: span 3; 
-}
-*/
-
